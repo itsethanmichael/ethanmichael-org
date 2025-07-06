@@ -126,7 +126,7 @@ function goHome() { window.location.href = "https://ethanmichael.org/"; }
 
 function openHome() { window.open("https://ethanmichael.org/"); }
 
-function gate() { window.location.href = "https://ethanmichael.org/gate"; }
+function gate() { window.location.href = "https://ethanmichael.org/gate.html"; }
 
 function websites() { window.location.href = "https://ethanmichael.org/websites.html"; }
 
