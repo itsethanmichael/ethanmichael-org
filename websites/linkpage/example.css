@@ -1,0 +1,221 @@
+body {
+
+    font-family: Inter, sans-serif;
+
+    background-image: linear-gradient(rgba(0, 0, 255, 0), rgba(0, 0, 255, 0.1));
+
+}
+
+#header {
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navBar {
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 2.5vh 0 2.5vh 0;
+
+}
+
+#contactButton {
+
+    font-size: calc(100% + 1.5vh);
+
+    margin-right: 20%;
+
+    border: 2px solid rgba(120, 120, 120, 0.25);
+    border-radius: 10px;
+
+}
+
+#contactButton:hover {
+
+    cursor: pointer;
+    
+    opacity: 0.8;
+
+}
+
+#shareButton {
+
+    font-size: calc(100% + 1.5vh);
+
+    margin-left: 20%;
+
+    border: 2px solid rgba(120, 120, 120, 0.25);
+    border-radius: 10px;
+
+}
+
+#shareButton:hover {
+    
+    cursor: pointer;
+    
+    opacity: 0.8;
+    
+}
+
+#titulo {
+
+    width: fit-content;
+
+    font-size: calc(100% + 2.5vh);
+
+    color: rgb(0, 127, 255);
+
+}
+
+#titulo:hover {
+
+    cursor: pointer;
+
+    opacity: 0.5;
+
+}
+
+#subtitulo {
+
+    width: fit-content;
+
+    margin: 1%;
+
+    font-size: calc(50% + 1vh);
+
+    font-style: italic;
+
+}
+
+#subtitulo:hover {
+
+    cursor: pointer;
+
+    color: rgba(0, 127, 255, 0.7);
+
+}
+
+#logo {
+
+    width: calc(5vw + 50px);
+    min-width: 100px;
+
+    margin: 5vh 0 5vh 0;
+
+}
+
+#logo:hover {
+
+    cursor: pointer;
+
+    opacity: 0.8;
+    
+}
+
+.linkBubble {
+
+    width: 50vw;
+    height: auto;
+    min-height: 5vh;
+
+    margin: 5vh 0 5vh 0;
+    padding: 1.5%;
+
+    background-color: rgb(45, 45, 45);
+
+    align-content: center;
+
+    //background-image: linear-gradient(rgba(0, 0, 255, 0.666), rgba(255, 0, 0, 0.666));
+
+    border: 2px solid black;
+    border-radius: 14px;
+
+}
+
+.linkBubble:hover {
+
+    cursor: pointer;
+
+    opacity: 0.8;
+
+    padding: 2%;
+
+}
+
+.linkBubbleContent {
+
+    width: 80%;
+
+    color: white;
+
+    font-size: calc(80% + 1vh);
+
+}
+
+.embeddedVideoBubble {
+
+    width: 50vw;
+    height: auto;
+    min-height: 5vh;
+    
+    margin: 5vh 0 5vh 0;
+    padding: 1.5%;
+
+    background-color: rgb(45, 45, 45);;
+
+    color: white;
+
+    align-content: center;
+    
+    //background-image: linear-gradient(rgba(0, 0, 0, 0.666), rgba(0, 255, 0, 0.666));
+    
+    border: 2px solid black;
+    border-radius: 14px;
+
+}
+
+.embeddedVideoBubble:hover {
+
+    cursor: pointer;
+
+    opacity: 0.8;
+
+    padding: 2%;
+
+}
+
+.embeddedVideoBubbleContent {
+
+    color: white;
+    
+    font-size: calc(80% + 1vh);
+
+}
+
+#footer {
+
+    margin: 15vh 0 5vh 0;
+    
+}
+
+#copyright {
+
+    font-size: calc(75% + 1vh);
+
+}
+
+#copyright:hover {
+
+    cursor: pointer;
+
+    opacity: 0.5;
+
+}

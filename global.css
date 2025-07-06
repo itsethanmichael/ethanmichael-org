@@ -1,0 +1,295 @@
+body {
+
+    font-family: Impact;
+    background-color: black;
+    color: #ee0059;
+    //font-weight:bold;
+    //margin: 2.5%;
+}
+
+a {
+    color: cyan;
+    text-decoration: underline;
+}
+
+a:hover { cursor: pointer; }
+
+nav { background-color: none; }
+
+.navLink {
+    width: calc(100px + 5vw);
+    margin: 0;
+    color: cyan;
+    border: 2px dashed red;
+}
+.navLink:hover {
+    cursor: pointer;
+    color: #ee0059;
+    border: 2px solid green;
+}
+
+#homeButton {
+
+    width: 0;
+    font-size: 200%;
+
+}
+
+#homeButton:hover {
+    
+    cursor: pointer;
+
+}
+
+#homeButtonText { width: 1%; }
+
+#homeButtonText:hover {
+
+    cursor: pointer;
+    color: yellow;
+
+}
+
+#lightbox {
+
+    z-index: 5;
+    top: 25%;
+    left: 12.5%;
+
+    border-radius: 3%;
+
+}
+
+#lightboxBar {
+
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    border: none;
+
+}
+
+#lightboxX {
+
+    text-align: center;
+
+}
+
+#lightboxX:hover {
+
+    cursor: pointer;
+    color: white;
+
+}
+
+#header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#tagline {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#logo {
+    max-width: calc(100px + 10vw);
+    opacity: 0.8;
+    margin-top: 5vh;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#logo2 {
+    max-width: calc(50px + 5vw);
+    opacity: 0.8;
+    margin: 1vh;
+}
+
+#logo2:hover {
+    cursor: pointer;
+}
+
+#EthanMichael {
+    margin: 2% 0 2% 0;
+    font-size: calc(2vw + 14pt);
+    color: #ffffff;
+}
+
+#EthanMichael:hover {
+    cursor: pointer;
+    //color: yellow;
+}
+
+#EthanMichael2 {
+    margin: 2% 0 2% 0;
+    font-size: calc(2vw + 8pt);
+    color: #ffffff;
+}
+
+#EthanMichael2:hover {
+    cursor: pointer;
+    //color: yellow;
+}
+
+#instagramLogo {
+
+    min-width: 50px;
+    width: 5vw;
+    max-width: 500px;
+
+}
+
+#instagramLogo:hover {
+
+    cursor: pointer;
+    
+}
+
+#IGdiv {
+
+    margin: 0 0 2% 0;
+
+}
+
+#enter {
+    width: calc(22.5vw + 50px);
+    font-size: calc(10pt + 5vw);
+    font-style: italic;
+    text-decoration: underline;
+    margin: 5vh 5vw 10vh 5vw;
+    background-color: black;
+    color: cyan;
+    border: 2px dashed red;
+    border-radius: 3px;
+}
+
+#enter:hover {
+    width: calc(25vw + 50px);
+    cursor: pointer;
+    color: #ee0059;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+#errText {
+    color: red;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin-top: 10vh;
+    font-size: calc(2vh + 20px);
+}
+
+#password {
+    width: calc(50vw + 50px);
+    height: calc(10vh + 25px);
+    margin-top: 10vh;
+    font-size: 150%;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: #ee0059;
+    border: 2px groove gray;
+}
+
+#submit {
+    width: calc(25vw + 50px);
+    height: calc(7.5vh + 25px);
+    margin: 10vh 0 10vh 0;
+    font-size: auto;
+    background-color: black;
+    color: cyan;
+    font-weight: bold;
+    border: 2px dashed red;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: black;
+    color: #ee0059;
+    border: 2px solid green;
+}
+
+#help {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 2vh;
+    text-decoration: underline;
+    color: cyan;
+}
+
+#help:hover {
+    cursor: pointer;
+    color: #ee0059;
+}
+
+#v {
+    width: 75%;
+    height: 75%;
+}
+
+#copyright {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin: 5vh 0 5vh 0;
+
+}
+
+#contact {
+
+    margin: 5vh 0 5vh 0;    
+    color: cyan;
+
+}
+
+#contact:hover {
+    
+    cursor: pointer;
+    
+    color: yellow;
+    
+}
+
+#footer {
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+
+    flex-direction: column;
+
+
+
+}

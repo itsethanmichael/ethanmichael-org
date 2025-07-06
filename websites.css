@@ -1,0 +1,155 @@
+#tagline1 {
+
+    margin: 5vh 0 2.5vh 0;
+
+    font-size: calc(100% + 1vw);
+
+}
+
+#tagline1:hover {
+
+    cursor: pointer;
+
+    color: rgb(0, 255, 0);
+
+}
+
+#tagline2 {
+
+    margin: 0 0 2.5vh 0;
+    
+}
+
+#tagline2:hover {
+
+    cursor: pointer;
+
+    color: rgb(0, 255, 0);
+
+}
+
+#infoBoxes {
+
+    display: flex;
+
+    margin: 3% 0 0 0;
+
+}
+
+.infoBox {
+
+    width: 30vw;
+    height: 40vh;
+
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+    align-content: center;
+
+    justify-items: center;
+
+}
+
+.infoBox:hover {
+
+    cursor: pointer;
+
+}
+
+.infoBoxContent {
+
+    display: flex;
+
+    width: fit-content;
+    
+    font-size: calc(100% + 1vw);
+    text-align: center;
+    
+    align-items: center;
+    justify-content: center;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    margin: 1vh 1vw 1vh 1vw;
+    
+    border-radius: 14px;
+    
+    color: rgb(255, 255, 255);
+
+    background-color: black;
+
+}
+
+#feesBox {
+
+    background-image: url('money1.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#feesBox:hover {
+
+    background-image: url('money2.png');
+    background-position: center;
+    color: white;
+
+}
+
+#needsBox {
+
+    background-image: url('needs2.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#needsBox:hover {
+
+    background-image: url('needs1.png');
+    background-position: center;
+    color: white;
+
+}
+
+#pricingBox {
+
+    background-image: url('pricing1.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#pricingBox:hover {
+
+    background-image: url('pricing2.png');
+    background-position: center;
+    color: white;
+
+}
+
+#descriptionBox {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: calc(100% + 1vw);
+    text-align: center;
+
+    color: white;
+
+    margin: 5% 0 5% 0;
+
+}
+
+#descriptionBox:hover {
+
+    cursor: pointer;
+
+    opacity: 0.8;
+
+}
