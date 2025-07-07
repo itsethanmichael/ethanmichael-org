@@ -20,7 +20,7 @@ function pricingBoxText() {
 
     const descriptionBox = document.getElementById("descriptionBox");
 
-    descriptionBox.innerHTML = "NO WEBSITE = LOSING CUSTOMERS‼️<br><br>PER <a href="https://www.forbes.com/sites/nicoleleinbachreyhle/2014/09/29/websites-for-small-businesses/">FORBES</a>";
+    descriptionBox.innerHTML = "NO WEBSITE = LOSING CUSTOMERS‼️<br><br>PER <a href='https://www.forbes.com/sites/nicoleleinbachreyhle/2014/09/29/websites-for-small-businesses/'>FORBES</a>";
 
 }
 
