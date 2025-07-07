@@ -3,13 +3,14 @@ body {
     font-family: Impact;
     background-color: black;
     color: #ee0059;
-    //font-weight:bold;
-    //margin: 2.5%;
+    
 }
 
 a {
+    
     color: cyan;
     text-decoration: underline;
+    
 }
 
 a:hover { cursor: pointer; }
@@ -17,15 +18,19 @@ a:hover { cursor: pointer; }
 nav { background-color: none; }
 
 .navLink {
+    
     width: calc(100px + 5vw);
     margin: 0;
     color: cyan;
     border: 2px dashed red;
+    
 }
 .navLink:hover {
+    
     cursor: pointer;
     color: #ee0059;
     border: 2px solid green;
+    
 }
 
 #homeButton {
@@ -104,45 +109,58 @@ nav { background-color: none; }
 }
 
 #logo {
+    
     max-width: calc(100px + 10vw);
     opacity: 0.8;
     margin-top: 5vh;
+    
 }
 
 #logo:hover {
+    
     cursor: pointer;
+    
 }
 
 #logo2 {
+    
     max-width: calc(50px + 5vw);
     opacity: 0.8;
     margin: 1vh;
+    
 }
 
 #logo2:hover {
+    
     cursor: pointer;
+    
 }
 
 #EthanMichael {
+    
     margin: 2% 0 2% 0;
     font-size: calc(2vw + 14pt);
     color: #ffffff;
+    
 }
-
 #EthanMichael:hover {
+    
     cursor: pointer;
-    //color: yellow;
+    
 }
 
 #EthanMichael2 {
+    
     margin: 2% 0 2% 0;
     font-size: calc(2vw + 8pt);
     color: #ffffff;
+    
 }
 
 #EthanMichael2:hover {
+    
     cursor: pointer;
-    //color: yellow;
+    
 }
 
 #instagramLogo {
@@ -165,70 +183,8 @@ nav { background-color: none; }
 
 }
 
-#enter {
-    width: calc(22.5vw + 50px);
-    font-size: calc(10pt + 5vw);
-    font-style: italic;
-    text-decoration: underline;
-    margin: 5vh 5vw 10vh 5vw;
-    background-color: black;
-    color: cyan;
-    border: 2px dashed red;
-    border-radius: 3px;
-}
-
-#enter:hover {
-    width: calc(25vw + 50px);
-    cursor: pointer;
-    color: #ee0059;
-    border: 2px solid green;
-    border-radius: 5px;
-}
-
-#errText {
-    color: red;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    margin-top: 10vh;
-    font-size: calc(2vh + 20px);
-}
-
-#password {
-    width: calc(50vw + 50px);
-    height: calc(10vh + 25px);
-    margin-top: 10vh;
-    font-size: 150%;
-    text-align: center;
-    font-weight: bold;
-    background-color: black;
-    color: #ee0059;
-    border: 2px groove gray;
-}
-
-#submit {
-    width: calc(25vw + 50px);
-    height: calc(7.5vh + 25px);
-    margin: 10vh 0 10vh 0;
-    font-size: auto;
-    background-color: black;
-    color: cyan;
-    font-weight: bold;
-    border: 2px dashed red;
-}
-
-#submit:hover {
-    cursor: pointer;
-    background-color: black;
-    color: #ee0059;
-    border: 2px solid green;
-}
-
 #help {
+    
     display: flex;
     align-items: center;
     align-self: center;
@@ -239,16 +195,21 @@ nav { background-color: none; }
     margin: 2vh;
     text-decoration: underline;
     color: cyan;
+    
 }
 
 #help:hover {
+    
     cursor: pointer;
     color: #ee0059;
+    
 }
 
 #v {
+    
     width: 75%;
     height: 75%;
+    
 }
 
 #copyright {
