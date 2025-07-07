@@ -4,7 +4,7 @@ function feesBoxText() {
 
     const descriptionBox = document.getElementById("descriptionBox");
 
-    descriptionBox.innerHTML = "NO HIDDEN FEES‼️<br><br>WE WILL BEAT ANY COMPETITOR'S PRICE";
+    descriptionBox.innerHTML = "$99 (REDIRECTS; LINKPAGES; LANDING PAGES) — $299 USD (FULL SITES) — NO HIDDEN FEES‼️<br><br>WE BEAT ALL INDUSTRY STANDARD PRICES";
 
 }
 
@@ -12,7 +12,7 @@ function needsBoxText() {
 
     const descriptionBox = document.getElementById("descriptionBox");
 
-    descriptionBox.innerHTML = "LINKPAGES; LANDING PAGES; FULL SITES; ETC.‼️<br><br>CRAFTED EXACTLY AS YOU LIKE";
+    descriptionBox.innerHTML = "DON'T LET YOUR PROFESSIONAL IMAGE SUFFER‼️<br><br>[RE]CLAIM YOUR DOMAIN NOW";
 
 }
 
@@ -20,7 +20,7 @@ function pricingBoxText() {
 
     const descriptionBox = document.getElementById("descriptionBox");
 
-    descriptionBox.innerHTML = "~ $10 / MONTH + LABOR (NEGOTIABLE)‼️<br><br>SET YOUR OWN RATE & CUSTOM PAYMENT PLAN";
+    descriptionBox.innerHTML = "SET YOUR OWN CUSTOM PAYMENT PLAN‼️<br><br>(>25% UPFRONT DEPOSIT REQUIRED)";
 
 }
 
