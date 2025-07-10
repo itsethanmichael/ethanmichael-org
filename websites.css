@@ -62,9 +62,10 @@
 
     display: flex;
 
+    min-width: 75%;
     width: fit-content;
     
-    font-size: calc(100% + 1vw);
+    font-size: calc(2.5vw);
     text-align: center;
     
     align-items: center;
