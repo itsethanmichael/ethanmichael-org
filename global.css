@@ -255,3 +255,23 @@ nav { background-color: none; }
 
 
 }
+
+@media (max-aspect-ratio: 1/1) {
+
+    .navLink {
+
+        width: 50vw;
+
+    }
+    
+}
+
+@media (min-aspect-ratio: 1/1) {
+
+    .navLink {
+
+        width: 20vw;
+
+    }
+
+}
