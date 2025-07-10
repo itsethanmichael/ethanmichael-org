@@ -184,6 +184,13 @@ nav { background-color: none; }
 
 }
 
+#reportBanner {
+
+    width:25vw;
+    max-width:616px;
+
+}
+
 #help {
     
     display: flex;
@@ -263,6 +270,13 @@ nav { background-color: none; }
         width: 50vw;
 
     }
+
+    #reportBanner {
+
+        width:50vw;
+        max-width:616px;
+
+    }
     
 }
 
@@ -271,6 +285,13 @@ nav { background-color: none; }
     .navLink {
 
         width: 20vw;
+
+    }
+
+    #reportBanner {
+
+        width:25vw;
+        max-width:616px;
 
     }
 
