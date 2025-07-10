@@ -68,8 +68,13 @@
     font-size: calc(2.5vw);
     text-align: center;
     
-    align-items: center;
+    justify-self: center;
     justify-content: center;
+    justify-items: center;
+
+    align-self: center;
+    align-content: center;
+    align-items: center;
     
     background-position: center;
     background-repeat: no-repeat;
