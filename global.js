@@ -70,7 +70,7 @@ function contactLightbox() {
     dm.id = "dm";
     dm.addEventListener("mouseover", () => { dm.style.cursor = "pointer"; dm.style.color = "yellow"; });
     dm.addEventListener("mouseout", () => { dm.style.color = "cyan"; })
-    dm.onclick = function () { window.open("instagram://user?username=ethanmichaelorg"); window.open("https://ig.me/m/ethanmichaelorg"); };
+    dm.onclick = function () { window.open("https://ig.me/m/ethanmichaelorg"); };
 
 }
 
@@ -130,7 +130,9 @@ function gate() { window.location.href = "https://ethanmichael.org/gate.html"; }
 
 function websites() { window.location.href = "https://ethanmichael.org/websites.html"; }
 
-function openIG() { window.open("https://instagram.com/ethanmichaelorg"); window.open("instagram://user?username=ethanmichaelorg"); window.open("https://ig.me/m/ethanmichaelorg"); };
+function development() { window.location.href = "https://ethanmichael.org/development.html"; }
+
+function openIG() { window.open("https://ig.me/m/ethanmichaelorg"); }
 
 function widthHeight() { document.body.style.width = screen.innerWidth; document.body.style.height = screen.innerHeight; window.addEventListener("resize", widthHeight);}
 window.addEventListener("resize", widthHeight);
