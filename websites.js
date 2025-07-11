@@ -4,7 +4,7 @@ function feesBoxText() {
 
     const descriptionBox = document.getElementById("descriptionBox");
 
-    descriptionBox.innerHTML = "$99 (REDIRECT PAGE OR LINKPAGE) — $99+ (FULL SITE) — NO HIDDEN FEES‼️<br><br>WE BEAT ALL INDUSTRY STANDARD PRICES";
+    descriptionBox.innerHTML = "$99 (REDIRECT / LINKS PAGE) — +$99 MORE / PAGE OR FUNCTION — FLAT RATE, NO HIDDEN FEES‼️<br><br>WE BEAT ALL STANDARD INDUSTRY PRICES";
 
 }
 
