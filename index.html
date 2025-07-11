@@ -8,91 +8,88 @@
 		
 		<title>ETHAN MICHAEL & CO.</title>
 		<meta name="description" content="ETHAN MICHAEL & CO.">
-		
+				
 		<meta property="og:title" content="ETHAN MICHAEL & CO.">
 		<meta property="og:description" content="ETHAN MICHAEL & CO.">
-	  <meta property="og:type" content="website">
-	  <meta property="og:url" content="https://www.ethanmichael.org/">
-	  <meta property="og:image" content="logo2.png">
-	  <meta property="og:image:secure_url" content="logo2.png">
-	  <meta property="og:image:alt" content="ETHAN MICHAEL & CO.">
-	  <meta property="og:site_name" content="ETHAN MICHAEL & CO.">
-	    
-	  <meta name="twitter:card" content="summary_large_image">
-	  <meta name="twitter:title" content="ETHAN MICHAEL & CO.">
-	  <meta name="twitter:description" content="ETHAN MICHAEL & CO.">
-	  <meta name="twitter:image" content="logo2.png">
-	    
-	  <link rel="icon" type="image/png" sizes="32x32" href="logo2.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="logo2.png">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.ethanmichael.org/">
+		<meta property="og:image" content="logo2.png">
+		<meta property="og:image:secure_url" content="logo2.png">
+		<meta property="og:image:alt" content="ETHAN MICHAEL & CO.">
+		<meta property="og:site_name" content="ETHAN MICHAEL & CO.">
+			    
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="ETHAN MICHAEL & CO.">
+		<meta name="twitter:description" content="ETHAN MICHAEL & CO.">
+		<meta name="twitter:image" content="logo2.png">
+			    
+		<link rel="icon" type="image/png" sizes="32x32" href="logo2.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="logo2.png">
+			
+		<link href="global.css" rel="stylesheet"></link>
+			
+		<script src="global.js">widthHeight();</script>
 	
-	  <link href="global.css" rel="stylesheet"></link>
-	
-	  <script src="global.js">widthHeight();</script>
-	
-	</head>
+</head>
 	
 	<body>
 	<center>
-		
+			
 		<div id="header">
+				
+		<div id="logoContainer">
+		    
+			<img src="logo2.png" id="logo" onclick="goHome()"></img>
+		    
+		</div>
+			    
+		<div id="EthanMichael" onclick="goHome()" onmouseenter="oohColorful(this)" onmouseleave="noColor(this)">ETHAN MICHAEL & CO.</div>
 			
-			<div id="logoContainer">
-	    
-	    	<img src="logo2.png" id="logo" onclick="goHome()"></img>
-	    
-	    </div>
-	    
-	    <div id="EthanMichael" onclick="goHome()" onmouseenter="oohColorful(this)" onmouseleave="noColor(this)">ETHAN MICHAEL & CO.</div>
-	
-	    <div id="IGdiv">
-	        
-	      <div>
-	            
-	          <img id="instagramLogo" src="IG.png" onclick="openIG()"></img>
-					
-				</div>
-			
+			<div id="IGdiv">
+				        
+				<div><img id="instagramLogo" src="IG.png" onclick="openIG()"></img></div>
+						
 			</div>
-	    
-	  </div>
-
+			    
+		</div>
+		
 		<div><a href="report.pdf" download><img id="reportBanner" src="report.png"></img></a></div>
-	  ||
-	  <div class="navLink" onclick="websites()">GET YOUR WEBSITE 💻</div>
-	
-	  <br> <br>
-	
-	  <hr>
-	    
-	  <br>
-	
-	  <div id="footer">
-	
-	    <div id="contact" onclick="contactLightbox()"><h2>📲 CLICK HERE TO GET IN TOUCH</h2><h4>📅 (Please wait 2 to 5 business days for a response.)</h4></div>
-	
-	    <div id="copyright">ETHAN MICHAEL & CO. © 2023 - 2025</div>
+		||
+		<div class="navLink" onclick="websites()">GET YOUR WEBSITE 💻</div>
+		<div class="navLink" onclick="development()">STOP BEING A LOSER 💡</div>
 			
+		<br> <br>
+			
+		<hr>
+			    
+		<br>
+			
+		<div id="footer">
+			
+			<div id="contact" onclick="contactLightbox()"><h2>📲 CLICK HERE TO GET IN TOUCH</h2><h4>📅 (Please wait 2 to 5 business days for a response.)</h4></div>
+			
+			<div id="copyright">ETHAN MICHAEL & CO. © 2023 - 2025</div>
+					
 		</div>
-		
+			
 	</center>
+			
 		
-	
 		<div id="lightbox">
-			
+					
 			<div id="lightboxBar">
-				
+						
 				<div id="lightboxX" onclick="closeLightbox()"></div>
-				
+						
 			</div>
-			
+					
 			<div id="contactInfo"></div>
-	    <div id="email"></div>
-	    <div id="phone"></div>
-	    <div id="dm"></div>
-		
+			<div id="email"></div>
+			<div id="phone"></div>
+			<div id="dm"></div>
+				
 		</div>
-	    
+		    
 	</body>
 
 </html>
