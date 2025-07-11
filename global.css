@@ -188,6 +188,13 @@ nav { background-color: none; }
 
     width:25vw;
     max-width:616px;
+    opacity: 1.0;
+
+}
+
+#reportBanner:hover {
+
+    opacity: 0.5;
 
 }
 
