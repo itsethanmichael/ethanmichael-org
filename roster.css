@@ -14,14 +14,12 @@
   align-self: center;
   align-content: center;
   align-items: center;
-
-  font-size: calc(14px + 2vh);
   
 }
 
 #publicClientText {
 
-  font-size: calc(16px + 2vh);
+  font-size: calc(12px + 1vh);
   
 }
 
@@ -60,6 +58,6 @@
 
 .rosterThumbText {
 
-  font-size: calc(16px + 2vh);
+  font-size: calc(12px + 2vh);
   
 }
