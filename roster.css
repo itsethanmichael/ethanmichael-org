@@ -19,7 +19,7 @@
 
 #publicClientText {
 
-  font-size: calc(12px + 1vh);
+  font-size: calc(14px + 1vh);
   
 }
 
@@ -58,6 +58,6 @@
 
 .rosterThumbText {
 
-  font-size: calc(12px + 2vh);
+  font-size: calc(12px + 1vh);
   
 }
