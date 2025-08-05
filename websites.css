@@ -239,6 +239,12 @@
 
     }
 
+    .infoBox {
+
+        width: 33.33%;
+        
+    }
+
     #infoBoxes {
 
         display: flex;
@@ -254,6 +260,12 @@
 
         width: 66.666vw;
 
+    }
+
+    .infoBox {
+
+        width: 80%;
+    
     }
 
     #infoBoxes {
