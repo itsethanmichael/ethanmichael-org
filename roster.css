@@ -1,15 +1,16 @@
 #rosterDiv {
-
   display: flex;
   flex-direction: column;
 
-  width: 100%;
-  margin: 10% auto;
-
-  justify-content: center;
   align-items: center;
-  
+  justify-content: center;
+
+  width: 100vw;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
+
 
 #publicClientText {
 
@@ -23,29 +24,29 @@
 }
 
 .rosterItem {
-
   display: flex;
   flex-direction: column;
 
-  width: 100%;
-
-  margin: calc(25px + 2vh);
-  
-  justify-content: center;
   align-items: center;
-  
+  justify-content: center;
+
+  margin: calc(25px + 2vh) auto;
+
+  width: auto;
+  max-width: 100%;
+  text-align: center;
 }
 
+
 .rosterThumb {
-  
-  display: block; /* Prevent inline gaps */
-  margin: 0 auto; /* Center inside its container */
+  display: block;
+  margin: 0 auto;
 
   min-width: 50px;
   width: 20vw;
   max-width: 200px;
-  
 }
+
 
 .rosterThumb:hover {
 
@@ -54,8 +55,9 @@
 }
 
 .rosterThumbText {
-
   text-align: center;
   font-size: calc(12px + 1vh);
-  
+  width: 100%;
+  margin-top: 0.5rem;
 }
+
