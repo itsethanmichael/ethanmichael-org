@@ -37,11 +37,14 @@
 }
 
 .rosterThumb {
+  
+  display: block; /* Prevent inline gaps */
+  margin: 0 auto; /* Center inside its container */
 
   min-width: 50px;
   width: 20vw;
   max-width: 200px;
-
+  
 }
 
 .rosterThumb:hover {
