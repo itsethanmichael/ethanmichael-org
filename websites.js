@@ -31,3 +31,28 @@ function resetDescriptionBox() {
     descriptionBox.innerHTML = "HOVER OVER AN IMAGE FOR MORE INFORMATION";
 
 }
+
+function alertFlash() {
+
+  const tagline2 = document.getElementById("tagline2");
+	const alertBool = 0;
+      
+  const timer = setInterval(() => {
+		
+		if (alertBool == 0) {
+      tagline2.style.color = "green";
+			alertBool = 1;
+		}
+			
+		else if (alertBool == 1) {
+			tagline2.style.color = "#ee0059";
+			alertBool = 0;
+		}
+		
+  }, 2000);
+
+	alertFlash();
+
+}
+
+alertFlash();
