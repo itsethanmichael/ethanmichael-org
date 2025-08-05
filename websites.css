@@ -18,7 +18,7 @@
 
     width: 66.666%;
 
-    margin: 10%;
+    margin: 10% 0 0 0;
     padding: 2%;
 
     font-size: calc(18px + 1vh);
@@ -40,7 +40,7 @@
 
     width: 66.666%;
 
-    margin: 1%;
+    margin: 1% 1% 10% 1%;
     padding: 2%;
 
     font-size: calc(12px + 1vh);
