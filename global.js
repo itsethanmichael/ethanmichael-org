@@ -29,9 +29,8 @@ function contactLightbox() {
     contactInfo.style.width = "100%";
     contactInfo.style.height = "auto";
     contactInfo.style.margin = "0 0 2.5% 0";
-    //contactInfo.style.margin = "2.5% 0 2.5% 0";
     contactInfo.style.color = "rgb(0, 255, 0)";
-    contactInfo.style.fontSize = "calc(50% + 1vw)"
+    contactInfo.style.fontSize = "calc(100% + 2vh)"
     contactInfo.style.textAlign = "center";
     contactInfo.innerHTML = "CONTACT INFORMATION";
     contactInfo.id = "contactInfo";
