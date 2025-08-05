@@ -62,6 +62,12 @@
     
 }
 
+#familiarImg:hover {
+
+    cursor: pointer;
+
+}
+
 #infoBoxes {
 
     display: flex;
