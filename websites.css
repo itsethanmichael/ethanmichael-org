@@ -48,64 +48,41 @@
 }
 
 #familiarDiv {
-
     display: flex;
     flex-direction: column;
-
-    width: 100%;
-
-    margin: 10%;
-
-    justify-self: center;
-    justify-content: center;
-    justify-items: center;
-
-    align-self: center;
-    align-content: center;
-    align-items: center;
     
+    width: 100%;
+    margin: 10% auto;
+
+    align-items: center;
+    justify-content: center;
 }
 
 #familiarText {
-
     display: flex;
     flex-direction: column;
 
     width: 100%;
-
-    justify-self: center;
-    justify-content: center;
-    justify-items: center;
-
-    align-self: center;
-    align-content: center;
-    align-items: center;
-
     font-size: calc(20px + 2vh);
 
+    align-items: center;
+    justify-content: center;
 }
 
 #familiarText:hover {
-
     cursor: pointer;
-    
 }
 
 #familiarImg {
-
     min-width: 200px;
     width: 50%;
     max-width: 1000px;
 
-    justify-self: center;
     align-self: center;
-    
 }
 
 #familiarImg:hover {
-
     cursor: pointer;
-
 }
 
 #infoBoxes {
