@@ -94,7 +94,7 @@
 #familiarImg {
 
     min-width: 200px;
-    width: 50vw;
+    width: 50%;
     max-width: 1000vw;
 
     justify-self: center;
@@ -252,7 +252,7 @@
 
     #familiarImg {
 
-        width: 90vw;
+        width: 90%;
 
     }
 
@@ -287,7 +287,7 @@
 
     #familiarImg {
 
-        width: 66.666vw;
+        width: 66.666%;
 
     }
 
