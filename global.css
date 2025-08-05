@@ -142,7 +142,7 @@ nav { background-color: none; }
 
 #logo2 {
     
-    max-width: calc(50px + 5vw);
+    max-width: calc(50px + 10vw);
     opacity: 0.8;
     margin: 1vh;
     
