@@ -62,7 +62,7 @@
     align-content: center;
     align-items: center;
 
-    font-size: calc(20px + 1vh);
+    font-size: calc(20px + 2vh);
 
 }
 
@@ -237,7 +237,7 @@
 
     #familiarImg {
 
-        width: 50vw;
+        width: 66.666vw;
 
     }
 
