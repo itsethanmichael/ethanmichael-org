@@ -36,6 +36,17 @@
 
 }
 
+#tagline3 {
+
+    width: 66.666%;
+
+    margin: 10%;
+    padding: 2%;
+
+    font-size: calc(10px + 1vh);
+
+}
+
 #familiarDiv {
 
     display: flex;
