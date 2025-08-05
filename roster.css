@@ -40,6 +40,7 @@
 
 .rosterThumb {
 
+  min-width: 50px;
   width: 20vw;
   max-width: 200px;
 
