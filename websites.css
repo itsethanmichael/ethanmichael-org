@@ -206,3 +206,24 @@
     opacity: 0.8;
 
 }
+
+
+@media (max-aspect-ratio: 1/1) {
+
+    #familiarImg {
+
+        width: 90vw;
+
+    }
+    
+}
+
+@media (min-aspect-ratio: 1/1) {
+
+    #familiarImg {
+
+        width: 50vw;
+
+    }
+
+}
