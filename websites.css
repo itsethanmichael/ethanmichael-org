@@ -238,6 +238,13 @@
         width: 90vw;
 
     }
+
+    #infoBoxes {
+
+        display: flex;
+        flex-direction: column;
+
+    }
     
 }
 
