@@ -19,6 +19,12 @@
   
 }
 
+#publicClientText {
+
+  font-size: calc(25px + 3vh);
+  
+}
+
 .rosterItem {
 
   display: flex;
@@ -26,7 +32,7 @@
 
   width: fit-content;
 
-  margin: calc(50px + 1vh);
+  margin: calc(25px + 2vh);
   
   justify-self: center;
   justify-content: center;
@@ -49,5 +55,11 @@
 .rosterThumb:hover {
 
   cursor: pointer;
+  
+}
+
+.rosterThumbText {
+
+  font-size: calc(25px + 2vh);
   
 }
