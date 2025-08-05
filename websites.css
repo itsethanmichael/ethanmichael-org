@@ -244,6 +244,12 @@
 
 @media (max-aspect-ratio: 1/1) {
 
+    #familiarText {
+
+        font-size: calc(12px + 4vh);
+        
+    }
+
     #familiarImg {
 
         width: 90vw;
@@ -272,6 +278,12 @@
 }
 
 @media (min-aspect-ratio: 1/1) {
+
+    #familiarText {
+
+        font-size: calc(24px + 4vh);
+        
+    }
 
     #familiarImg {
 
