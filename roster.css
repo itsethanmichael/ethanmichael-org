@@ -1,0 +1,15 @@
+#rosterDiv {
+
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+
+  justify-content: center;
+  justify-items: center;
+
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  
+}
