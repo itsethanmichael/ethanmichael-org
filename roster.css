@@ -19,6 +19,13 @@
   
 }
 
+.rosterItem {
+
+  display: flex;
+  flex-direction: column;
+  
+}
+
 .rosterThumb {
 
   width: 10vw;
