@@ -256,4 +256,11 @@
 
     }
 
+    #infoBoxes {
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
 }
