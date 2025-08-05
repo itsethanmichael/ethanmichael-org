@@ -12,5 +12,7 @@
   align-self: center;
   align-content: center;
   align-items: center;
+
+  font-size: calc(14px + 100%);
   
 }
