@@ -45,6 +45,12 @@
     
 }
 
+#familiarText:hover {
+
+    cursor: pointer;
+    
+}
+
 #familiarImg {
 
     min-width: 500px;
