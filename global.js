@@ -130,7 +130,7 @@ function gate() { window.location.href = "https://ethanmichael.org/gate.html"; }
 
 function websites() { window.location.href = "https://ethanmichael.org/websites.html"; }
 
-function development() { window.location.href = "https://ethanmichael.org/development.html"; }
+function roster() { window.location.href = "https://ethanmichael.org/roster.html"; }
 
 function openIG() { window.open("https://ig.me/m/ethanmichaelorg"); }
 
