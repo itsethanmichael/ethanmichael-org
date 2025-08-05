@@ -21,7 +21,7 @@
     margin: 10%;
     padding: 2%;
 
-    font-size: calc(14px + 1vh);
+    font-size: calc(18px + 1vh);
 
     border: 5px solid #ff5959;
     border-radius: 20px;
@@ -40,10 +40,10 @@
 
     width: 66.666%;
 
-    margin: 10%;
+    margin: 1%;
     padding: 2%;
 
-    font-size: calc(10px + 1vh);
+    font-size: calc(12px + 1vh);
 
 }
 
