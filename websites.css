@@ -2,7 +2,7 @@
 
     margin: 5vh 0 2.5vh 0;
 
-    font-size: calc(100% + 1vw);
+    font-size: calc(30px + 2vh);
 
 }
 
@@ -43,6 +43,12 @@
     align-content: center;
     align-items: center;
     
+}
+
+#familiarText {
+
+    font-size: calc(25px + 1vh);
+
 }
 
 #familiarText:hover {
