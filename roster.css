@@ -18,3 +18,10 @@
   font-size: calc(14px + 100%);
   
 }
+
+.rosterThumb {
+
+  width: 10vw;
+  max-width: 100px;
+
+}
