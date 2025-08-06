@@ -1,7 +1,7 @@
 function contactLightbox() {
 
-    const lightbox = document.getElementById("lightbox");
-    const lightboxBar = document.getElementById("lightboxBar");
+    //const lightbox = document.getElementById("lightbox");
+    //const lightboxBar = document.getElementById("lightboxBar");
     const lightboxX = document.getElementById("lightboxX");
 
     const contactInfo = document.getElementById("contactInfo");
@@ -75,7 +75,8 @@ function contactLightbox() {
 function closeLightbox() {
 
     const lightbox = document.getElementById("lightbox");
-    const lightboxBar = document.getElementById("lightboxBar");
+    lightbox.style.display = "none";
+    /*const lightboxBar = document.getElementById("lightboxBar");
     const lightboxX = document.getElementById("lightboxX");
 
     const contactInfo = document.getElementById("contactInfo");
@@ -116,7 +117,7 @@ function closeLightbox() {
     dm.style.width = "0";
     dm.style.height = "0";
     dm.style.margin = "0";
-    dm.innerHTML = "";
+    dm.innerHTML = "";*/
 
 }
 
