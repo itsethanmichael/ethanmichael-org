@@ -25,8 +25,8 @@ function contactLightbox() {
 
     //lightboxBar.style.border = "2px solid whitesmoke";
 
+    lightboxX.style.width = "calc(2% + 1vw)";
     lightboxX.style.height = "90%";
-    lightboxX.style.width = lightboxX.style.height;
     lightboxX.style.margin = "1%";
     lightboxX.style.border = "2px solid red";
     lightboxX.style.color = "red";
