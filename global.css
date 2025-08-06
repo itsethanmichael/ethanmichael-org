@@ -78,10 +78,17 @@ nav { background-color: none; }
 
 #lightbox {
 
+		position: fixed;
+		height: auto;
     z-index: 5;
     top: 25%;
     left: 12.5%;
 
+		background-color: rgba(50, 50, 50, 0.95);
+
+		color: white;
+
+		border: 2px solid whitesmoke;
     border-radius: 3%;
 
 }
@@ -98,7 +105,16 @@ nav { background-color: none; }
 
 #lightboxX {
 
+		width: calc(2% + 1vw);
+		height: 90%;
+
     text-align: center;
+
+		margin: 1%;
+
+		color: red;
+	
+		border: 2px solid red;
 
 }
 
@@ -294,6 +310,7 @@ nav { background-color: none; }
 
 		#lightbox {
 
+			width: 75%;
 			top: 25%;
     	left: 12.5%;
 
@@ -318,6 +335,7 @@ nav { background-color: none; }
 
 		#lightbox {
 
+			width: 50%;
 			top: 25%;
     	left: 25%;
 			
