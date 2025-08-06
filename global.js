@@ -1,6 +1,6 @@
 function contactLightbox() {
 
-    //const lightbox = document.getElementById("lightbox");
+    const lightbox = document.getElementById("lightbox");
     //const lightboxBar = document.getElementById("lightboxBar");
     const lightboxX = document.getElementById("lightboxX");
 
@@ -9,6 +9,7 @@ function contactLightbox() {
     const phone = document.getElementById("phone");
     const dm = document.getElementById("dm");
 
+    lightbox.style.display = "block";
     //lightbox.style.height = "auto";
     //lightbox.style.zIndex = "5";
     //lightbox.style.position = "fixed";
