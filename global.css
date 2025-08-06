@@ -78,6 +78,7 @@ nav { background-color: none; }
 
 #lightbox {
 
+		display: none;
 		position: fixed;
 		height: auto;
     z-index: 5;
