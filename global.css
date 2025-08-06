@@ -292,6 +292,13 @@ nav { background-color: none; }
 
 @media (max-aspect-ratio: 1/1) {
 
+		#lightbox {
+
+			top: 25%;
+    	left: 12.5%;
+
+		}
+
     .navLink {
 
         width: 50vw;
@@ -308,6 +315,13 @@ nav { background-color: none; }
 }
 
 @media (min-aspect-ratio: 1/1) {
+
+		#lightbox {
+
+			top: 25%;
+    	left: 25%;
+			
+		}
 
     .navLink {
 
