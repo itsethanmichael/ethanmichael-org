@@ -1,5 +1,10 @@
 function contactLightbox() {
 
+    let w = false;
+    if (document.body.style.width >= document.body.style.height) {
+        w = true;
+    }
+
     const lightbox = document.getElementById("lightbox");
     const lightboxBar = document.getElementById("lightboxBar");
     const lightboxX = document.getElementById("lightboxX");
@@ -9,7 +14,8 @@ function contactLightbox() {
     const phone = document.getElementById("phone");
     const dm = document.getElementById("dm");
 
-    lightbox.style.width = "75%";
+    if (w) { lightbox.style.width = "50%"; }
+    else if (!w) { lightbox.style.width = "75%"; }
     lightbox.style.height = "auto";
     lightbox.style.zIndex = "5";
     lightbox.style.position = "fixed";
@@ -19,8 +25,8 @@ function contactLightbox() {
 
     //lightboxBar.style.border = "2px solid whitesmoke";
 
-    lightboxX.style.width = "calc(2% + 1vw)";
     lightboxX.style.height = "90%";
+    lightboxX.style.width = lightboxX.style.height;
     lightboxX.style.margin = "1%";
     lightboxX.style.border = "2px solid red";
     lightboxX.style.color = "red";
