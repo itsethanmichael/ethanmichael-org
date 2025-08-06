@@ -9,21 +9,20 @@ function contactLightbox() {
     const phone = document.getElementById("phone");
     const dm = document.getElementById("dm");
 
-    lightbox.style.width = "fit-content";
-    lightbox.style.height = "auto";
-    lightbox.style.zIndex = "5";
-    lightbox.style.position = "fixed";
-    lightbox.style.backgroundColor = "rgba(50, 50, 50, 0.95)";
-    lightbox.style.border = "2px solid whitesmoke";
-    lightbox.style.color = "white";
+    //lightbox.style.height = "auto";
+    //lightbox.style.zIndex = "5";
+    //lightbox.style.position = "fixed";
+    //lightbox.style.backgroundColor = "rgba(50, 50, 50, 0.95)";
+    //lightbox.style.border = "2px solid whitesmoke";
+    //lightbox.style.color = "white";
 
     //lightboxBar.style.border = "2px solid whitesmoke";
 
-    lightboxX.style.width = "calc(2% + 1vw)";
-    lightboxX.style.height = "90%";
-    lightboxX.style.margin = "1%";
-    lightboxX.style.border = "2px solid red";
-    lightboxX.style.color = "red";
+    //lightboxX.style.width = "calc(2% + 1vw)";
+    //lightboxX.style.height = "90%";
+    //lightboxX.style.margin = "1%";
+    //lightboxX.style.border = "2px solid red";
+    //lightboxX.style.color = "red";
     lightboxX.innerHTML = "X";
 
     contactInfo.style.width = "100%";
