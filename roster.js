@@ -21,6 +21,11 @@ function goTo(x) {
 
       window.location.href = "https://monstertamer.net/";
       break;
+
+    case 4:
+
+      window.location.href = "https://bettermyenglish.com/";
+      break;
       
   }
   
