@@ -86,6 +86,7 @@ function goTo(x) {
 
     case 3:
 			window.location.href = "./roster.html";
+		  break;
 
     case 4:
 
