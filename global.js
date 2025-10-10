@@ -1,7 +1,6 @@
 function contactLightbox() {
 
     const lightbox = document.getElementById("lightbox");
-    //const lightboxBar = document.getElementById("lightboxBar");
     const lightboxX = document.getElementById("lightboxX");
 
     const contactInfo = document.getElementById("contactInfo");
@@ -10,20 +9,6 @@ function contactLightbox() {
     const dm = document.getElementById("dm");
 
     lightbox.style.display = "block";
-    //lightbox.style.height = "auto";
-    //lightbox.style.zIndex = "5";
-    //lightbox.style.position = "fixed";
-    //lightbox.style.backgroundColor = "rgba(50, 50, 50, 0.95)";
-    //lightbox.style.border = "2px solid whitesmoke";
-    //lightbox.style.color = "white";
-
-    //lightboxBar.style.border = "2px solid whitesmoke";
-
-    //lightboxX.style.width = "calc(2% + 1vw)";
-    //lightboxX.style.height = "90%";
-    //lightboxX.style.margin = "1%";
-    //lightboxX.style.border = "2px solid red";
-    //lightboxX.style.color = "red";
     lightboxX.innerHTML = "X";
 
     contactInfo.style.width = "100%";
@@ -77,62 +62,41 @@ function closeLightbox() {
 
     const lightbox = document.getElementById("lightbox");
     lightbox.style.display = "none";
-    /*const lightboxBar = document.getElementById("lightboxBar");
-    const lightboxX = document.getElementById("lightboxX");
-
-    const contactInfo = document.getElementById("contactInfo");
-    const email = document.getElementById("email");
-    const phone = document.getElementById("phone");
-    const dm = document.getElementById("dm");
-
-    lightbox.style.width = "50%";
-    lightbox.style.height = "50%";
-    lightbox.style.zIndex = "-5";
-    lightbox.style.background = "none";
-    lightbox.style.border = "none";
-
-    lightboxBar.style.border = "none";
-
-    lightboxX.style.width = "0";
-    lightboxX.style.height = "0";
-    lightboxX.style.margin = "0";
-    lightboxX.style.border = "none";
-
-    lightboxX.innerHTML = "";
-
-    contactInfo.style.width = "0";
-    contactInfo.style.height = "0";
-    contactInfo.style.margin = "0";
-    contactInfo.innerHTML = "";
-
-    email.style.width = "0";
-    email.style.height = "0";
-    email.style.margin = "0";
-    email.innerHTML = "";
-
-    phone.style.width = "0";
-    phone.style.height = "0";
-    phone.style.margin = "0";
-    phone.innerHTML = "";
-
-    dm.style.width = "0";
-    dm.style.height = "0";
-    dm.style.margin = "0";
-    dm.innerHTML = "";*/
 
 }
 
-function goHome() { window.location.href = "https://ethanmichael.org/"; }
+function goTo(x) {
 
-function openHome() { window.open("https://ethanmichael.org/"); }
+  switch (x) {
 
-function gate() { window.location.href = "https://ethanmichael.org/gate.html"; }
+    case 0:
 
-function websites() { window.location.href = "https://ethanmichael.org/websites.html"; }
+      window.open("https://ethanmichael.org/");
+      break;
 
-function roster() { window.location.href = "https://ethanmichael.org/roster.html"; }
+    case 1:
 
-function openIG() { window.open("https://ig.me/m/ethanmichaelorg"); }
+      window.open("https://ig.me/m/ethanmichaelorg/");
+      break;
+
+    case 2:
+
+      window.location.href = "https://youtube.com/@officialethanmichael";
+      break;
+
+    case 3:
+
+      window.location.href = "https://monstertamer.net/";
+      break;
+
+    case 4:
+
+      window.location.href = "https://bettermyenglish.com/";
+      break;
+      
+  }
+  
+}
 
 function widthHeight() { document.body.style.width = screen.innerWidth; document.body.style.height = screen.innerHeight; window.addEventListener("resize", widthHeight);}
 window.addEventListener("resize", widthHeight);
