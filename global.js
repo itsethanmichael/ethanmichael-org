@@ -81,17 +81,20 @@ function goTo(x) {
 
     case 2:
 
-      window.location.href = "https://youtube.com/@officialethanmichael";
+      window.open("https://youtube.com/@officialethanmichael");
       break;
 
     case 3:
-
-      window.location.href = "https://monstertamer.net/";
-      break;
+			window.location.href = "./roster.html";
 
     case 4:
 
-      window.location.href = "https://bettermyenglish.com/";
+      window.open("https://monstertamer.net/");
+      break;
+
+    case 5:
+
+      window.open("https://youtube.com/@bettermyenglish");
       break;
       
   }
