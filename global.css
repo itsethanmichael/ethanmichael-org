@@ -28,6 +28,7 @@ nav { background-color: none; }
     font-size: calc(10px + 100%);
     color: cyan;
     border: 2px dashed red;
+	border-radius: 10px;
     
 }
 .navLink:hover {
