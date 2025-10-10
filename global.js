@@ -54,7 +54,7 @@ function contactLightbox() {
     dm.id = "dm";
     dm.addEventListener("mouseover", () => { dm.style.cursor = "pointer"; dm.style.color = "yellow"; });
     dm.addEventListener("mouseout", () => { dm.style.color = "cyan"; })
-    dm.onclick = goTo(1);//function () { window.open("https://ig.me/m/ethanmichaelorg"); };
+    dm.onclick = goTo(1);
 
 }
 
@@ -71,7 +71,7 @@ function goTo(x) {
 
     case 0:
 
-      window.open("https://ethanmichael.org/");
+      window.location.href = "https://ethanmichael.org/";
       break;
 
     case 1:
