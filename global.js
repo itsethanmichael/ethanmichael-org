@@ -54,7 +54,7 @@ function contactLightbox() {
     dm.id = "dm";
     dm.addEventListener("mouseover", () => { dm.style.cursor = "pointer"; dm.style.color = "yellow"; });
     dm.addEventListener("mouseout", () => { dm.style.color = "cyan"; })
-    dm.onclick = goTo(1);
+    dm.onclick = function () { goTo(1); };
 
 }
 
