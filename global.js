@@ -4,8 +4,6 @@ function contactLightbox() {
     const lightboxX = document.getElementById("lightboxX");
 
     const contactInfo = document.getElementById("contactInfo");
-    const email = document.getElementById("email");
-    //const phone = document.getElementById("phone");
     const dm = document.getElementById("dm");
 
     lightbox.style.display = "block";
@@ -19,30 +17,6 @@ function contactLightbox() {
     contactInfo.style.textAlign = "center";
     contactInfo.innerHTML = "CONTACT INFORMATION";
     contactInfo.id = "contactInfo";
-
-    email.style.width = "100%";
-    email.style.height = "auto";
-    email.style.margin = "2.5vh 0 2.5vh 0";
-    email.style.color = "cyan";
-    email.style.fontSize = "calc(100% + 1vh)"
-    email.style.textAlign = "center";
-    email.innerHTML = "📨 EMAIL";
-    email.id = "email";
-    email.addEventListener("mouseover", () => { email.style.cursor = "pointer"; email.style.color = "yellow"; });
-    email.addEventListener("mouseout", () => { email.style.color = "cyan"; })
-    email.onclick = function () { window.open("mailto:business@ethanmichael.org"); }
-
-    /*phone.style.width = "100%";
-    phone.style.height = "auto";
-    phone.style.margin = "2.5vh 0 2.5vh 0";
-    phone.style.color = "cyan";
-    phone.style.fontSize = "calc(100% + 1vh)"
-    phone.style.textAlign = "center";
-    phone.innerHTML = "📞 CALL / TEXT";
-    phone.id = "phone";
-    phone.addEventListener("mouseover", () => { phone.style.cursor = "pointer"; phone.style.color = "yellow"; });
-    phone.addEventListener("mouseout", () => { phone.style.color = "cyan"; })
-    phone.onclick = function () { window.open("tel:"); }*/
 
     dm.style.width = "100%";
     dm.style.height = "auto";
@@ -82,20 +56,6 @@ function goTo(x) {
     case 2:
 
       window.open("https://youtube.com/@officialethanmichael");
-      break;
-
-    case 3:
-			window.location.href = "./roster.html";
-		  break;
-
-    case 4:
-
-      window.open("https://monstertamer.net/");
-      break;
-
-    case 5:
-
-      window.open("https://youtube.com/@bettermyenglish");
       break;
       
   }
