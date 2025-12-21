@@ -37,7 +37,7 @@ function contactLightbox() {
     email.style.color = "cyan";
     email.style.fontSize = "calc(100% + 1vh)"
     email.style.textAlign = "center";
-    email.innerHTML = "📲 EMAIL";
+    email.innerHTML = "📧 EMAIL";
     email.id = "email";
     email.addEventListener("mouseover", () => { email.style.cursor = "pointer"; email.style.color = "yellow"; });
     email.addEventListener("mouseout", () => { email.style.color = "cyan"; })
