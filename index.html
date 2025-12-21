@@ -45,11 +45,15 @@
 					
 			<div id="EthanMichael" onclick="goTo(0)" onmouseenter="oohColorful(this)" onmouseleave="noColor(this)">ETHAN MICHAEL & CO.</div>
 
-			<div id="contact" onclick="contactLightbox()" style="margin: 0;"><h2>📲 CLICK HERE TO GET IN TOUCH</h2></div>
+			<div class="contact" onclick="contactLightbox()" style="margin: 0;"><h2>📲 CLICK HERE TO GET IN TOUCH</h2></div>
 
 		</div>
 
-		<p class="play_text" style="margin: calc(5% + 5vh) calc(5% + 2.5vh); font-size: calc(2vw + 14pt); pointer-events: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none">REACH OUT WITH YOUR MEANS &amp; REQUIREMENTS, AND WATCH US WOW YOU NEXT</p>
+		<div id="tagline">
+
+			<p class="play_text" style="pointer-events: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none">REACH OUT WITH YOUR MEANS &amp; REQUIREMENTS, AND WE'LL WOW YOU</p>
+
+		</div>
 			
 		<hr>
 
@@ -80,7 +84,7 @@
 			
 		<div id="footer">
 			
-			<div id="contact" onclick="contactLightbox()"><h2>📲 CLICK HERE TO GET IN TOUCH</h2></div>
+			<div class="contact" onclick="contactLightbox()"><h2>📲 CLICK HERE TO GET IN TOUCH</h2></div>
 			
 			<div id="copyright">ETHAN MICHAEL & CO. © 2023 - 2025</div>
 					
@@ -107,6 +111,9 @@
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
   				playText();
+				const e = document.getElementById("tagline");
+				e.style.border = "4px dashed red";
+				borderlineMad(e);
 			});
 		</script>
 		    

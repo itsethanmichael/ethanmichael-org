@@ -204,6 +204,24 @@ nav { background-color: none; }
     
 }
 
+#tagline {
+
+    width: 75%;
+    height: 20rem;
+
+    margin: calc(5% + 5vh) calc(5% + 2.5vh);
+    padding: 5%;
+
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: calc(3vw + 15pt);
+
+    border-radius: 10px;
+
+}
+
 #instagramLogo {
 
     min-width: 50px;
@@ -231,14 +249,14 @@ nav { background-color: none; }
 
 }
 
-#contact {
+.contact {
 
     margin: 5vh 0 5vh 0;    
     color: cyan;
 
 }
 
-#contact:hover {
+.contact:hover {
     
     cursor: pointer;
     

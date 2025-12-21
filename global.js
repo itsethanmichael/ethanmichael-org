@@ -108,8 +108,8 @@ function playText() {
 
   const text_list = [
 
-    "WITH ENOUGH TIME &amp; RESOURCES, WE CAN ACCOMPLISH ANYTHING YOU NEED",
-    "REACH OUT WITH YOUR MEANS &amp; REQUIREMENTS, AND WATCH US WOW YOU NEXT"
+    "WITH ENOUGH TIME &amp; RESOURCES, WE CAN ACCOMPLISH ANYTHING",
+    "REACH OUT WITH YOUR MEANS &amp; REQUIREMENTS, AND WE'LL WOW YOU"
   
   ];
 
@@ -136,7 +136,27 @@ function playText() {
 
   }
 
-  setTimeout(function() {playText()}, 5000);
+  setTimeout(function() { playText() }, 5000);
+
+}
+
+function borderlineMad(x) {
+
+  switch (x.style.borderStyle) {
+
+    case ("dashed"):
+
+      x.style.borderStyle = "dotted";
+      break;
+    
+    case ("dotted"):
+
+      x.style.borderStyle = "dashed";
+      break;
+
+  }
+
+  setTimeout(function() { borderlineMad(x) }, (Math.floor(Math.random() * (150 - 100)) + 50));
 
 }
 
