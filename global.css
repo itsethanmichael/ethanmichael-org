@@ -391,24 +391,17 @@ nav { background-color: none; }
 
 @media (min-aspect-ratio: 1/1) {
 
-		#lightbox {
+	#lightbox {
 
-			width: 50%;
-			top: 25%;
-    	left: 25%;
+        width: 50%;
+        top: 25%;
+        left: 25%;
 			
-		}
+	}
 
     .navLink {
 
         width: 20vw;
-
-    }
-
-    #reportBanner {
-
-        width:25vw;
-        max-width:616px;
 
     }
 
