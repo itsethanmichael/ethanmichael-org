@@ -107,16 +107,19 @@ nav { background-color: none; }
 
 #lightboxX {
 
-		width: calc(2% + 1vw);
-		height: 90%;
+    min-width: 30px;
+	width: 1vw;
+    min-height: 30px;
+	height: 1vw;
 
+    align-content: center;
     text-align: center;
 
-		margin: 1%;
+	margin: 1%;
 
-		color: red;
+	color: red;
 	
-		border: 2px solid red;
+	border: 2px solid red;
 
 }
 

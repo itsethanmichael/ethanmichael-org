@@ -10,6 +10,7 @@ function contactLightbox() {
 
     lightbox.style.display = "block";
     lightboxX.innerHTML = "X";
+    lightboxX.style.fontSize = "calc(100% + 4pt)";
 
     contactInfo.style.width = "100%";
     contactInfo.style.height = "auto";
