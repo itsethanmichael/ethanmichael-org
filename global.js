@@ -97,7 +97,7 @@ function oohColorful(x) {
 
     let abcd = "rgba(" + a.toString() + ", " + b.toString() + ", " + c.toString() + ", " + d.toString() + ")";
 
-    x.style.color = abcd;
+    x.style.setProperty("color", abcd, "important");
 
 }
 
@@ -112,7 +112,8 @@ function playText() {
   
   ];
 
-  let play_text = document.getElementById("play_text");
+  const play_text = document.getElementById("play_text");
+  oohColorful(play_text);
   
   switch (play_text.innerHTML) {
 
@@ -136,5 +137,4 @@ document.addEventListener("DOMContentLoaded", function() {
   playText();
 });
 
-//setTimeout(playText(), 1000);
 
