@@ -251,7 +251,9 @@ nav { background-color: none; }
 
 .contact {
 
-    margin: 5vh 0 5vh 0;    
+    margin: 5vh 0 5vh 0;
+
+    font-size: calc(1.5vw + 0.5rem);
     color: cyan;
 
 }
