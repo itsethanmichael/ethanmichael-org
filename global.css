@@ -6,7 +6,7 @@ body {
     color: #ee0059;
 
     padding-left: env(safe-area-inset-left);
-		padding-right: env(safe-area-inset-right);
+	padding-right: env(safe-area-inset-right);
     
 }
 
@@ -130,10 +130,10 @@ nav { background-color: none; }
 #header {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
@@ -144,6 +144,21 @@ nav { background-color: none; }
     align-items: center;
     align-content: center;
     justify-content: center;
+
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+
+}
+
+#logoContainer {
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
 
 }
 
@@ -163,7 +178,7 @@ nav { background-color: none; }
 
 #logo2 {
     
-    max-width: calc(50px + 10vw);
+    max-width: calc(25px + 2.5vw);
     opacity: 0.8;
     margin: 1vh;
     
@@ -191,7 +206,7 @@ nav { background-color: none; }
 #EthanMichael2 {
     
     margin: 2% 0 2% 0;
-    font-size: calc(2vw + 12pt);
+    font-size: calc(1vw + 12pt);
     color: #ffffff;
     
 }
@@ -219,20 +234,6 @@ nav { background-color: none; }
 #IGdiv {
 
     margin: 0 0 2% 0;
-
-}
-
-#reportBanner {
-
-    width:25vw;
-    max-width:616px;
-    opacity: 1.0;
-
-}
-
-#reportBanner:hover {
-
-    opacity: 0.5;
 
 }
 
@@ -276,6 +277,12 @@ nav { background-color: none; }
 
     margin: 5vh 0 5vh 0;
 
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+
 }
 
 #contact {
@@ -304,9 +311,9 @@ nav { background-color: none; }
 
     flex-direction: column;
 
-
-
 }
+
+
 
 @media (max-aspect-ratio: 1/1) {
 

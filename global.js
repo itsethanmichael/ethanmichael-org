@@ -4,6 +4,8 @@ function contactLightbox() {
     const lightboxX = document.getElementById("lightboxX");
 
     const contactInfo = document.getElementById("contactInfo");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
     const dm = document.getElementById("dm");
 
     lightbox.style.display = "block";
@@ -29,6 +31,22 @@ function contactLightbox() {
     dm.addEventListener("mouseover", () => { dm.style.cursor = "pointer"; dm.style.color = "yellow"; });
     dm.addEventListener("mouseout", () => { dm.style.color = "cyan"; })
     dm.onclick = function () { goTo(1); };
+
+    email.style.width = "100%";
+    email.style.height = "auto";
+    email.style.margin = "2.5vh 0 5vh 0";
+    email.style.color = "cyan";
+    email.style.fontSize = "calc(100% + 1vh)"
+    email.style.textAlign = "center";
+    email.innerHTML = "📲 EMAIL";
+    email.id = "email";
+    email.addEventListener("mouseover", () => { email.style.cursor = "pointer"; email.style.color = "yellow"; });
+    email.addEventListener("mouseout", () => { email.style.color = "cyan"; })
+    email.onclick = function () {
+      navigator.clipboard.writeText("business@ethanmichael.org");
+      window.alert("business@ethanmichael.org COPIED TO CLIPBOARD");
+      window.location.href = "mailto:business@ethanmichael.org";
+    };
 
 }
 
@@ -57,6 +75,11 @@ function goTo(x) {
 
       window.open("https://youtube.com/@officialethanmichael");
       break;
+
+      case 3:
+
+        window.location.href = "https://ethanmichael.org/past_clientele.html"
+        break;
       
   }
   
@@ -80,3 +103,39 @@ function oohColorful(x) {
 }
 
 function noColor(x) { x.style.color = "white"; }
+
+function playText() {
+
+  const text_list = [
+
+    "GIVEN ENOUGH TIME AND RESOURCES, WE CAN ACCOMPLISH ANYTHING YOU NEED",
+    "REACH OUT WITH YOUR REQUIREMENTS AND MEANS, LET US WOW YOU"
+  
+  ];
+
+  let play_text = document.getElementById("play_text");
+  
+  switch (play_text.innerHTML) {
+
+    case (text_list[0]):
+
+      play_text.innerHTML = text_list[1];
+      break;
+
+    case (text_list[1]):
+
+      play_text.innerHTML = text_list[0];
+      break;
+
+  }
+
+  setTimeout(function() {playText()}, 5000);
+
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  playText();
+});
+
+//setTimeout(playText(), 1000);
+
