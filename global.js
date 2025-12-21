@@ -17,7 +17,6 @@ function contactLightbox() {
     contactInfo.style.color = "rgb(0, 255, 0)";
     contactInfo.style.fontSize = "calc(100% + 2vh)"
     contactInfo.style.textAlign = "center";
-    contactInfo.innerHTML = "CONTACT INFORMATION";
     contactInfo.id = "contactInfo";
 
     dm.style.width = "100%";
