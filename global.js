@@ -112,29 +112,31 @@ function playText() {
   
   ];
 
-  const play_text = document.getElementById("play_text");
-  oohColorful(play_text);
+  const play_text = document.getElementsByClassName("play_text");
+  for (let i = 0; i < play_text.length; i++) {
+
+    oohColorful(play_text[i]);
+
   
-  switch (play_text.innerHTML) {
+    switch (play_text[i].innerHTML) {
 
-    case (text_list[0]):
+      case (text_list[0]):
 
-      play_text.innerHTML = text_list[1];
-      break;
+        play_text[i].innerHTML = text_list[1];
+        break;
 
-    case (text_list[1]):
+      case (text_list[1]):
 
-      play_text.innerHTML = text_list[0];
-      break;
+        play_text[i].innerHTML = text_list[0];
+        break;
+
+    }
+
 
   }
 
   setTimeout(function() {playText()}, 5000);
 
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-  playText();
-});
 
 

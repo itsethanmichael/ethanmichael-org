@@ -57,9 +57,12 @@
         <center>
         <div id="rosterDiv">
 
-            <span style="font-size: calc(28pt + 2vw);">PAST CLIENTELE</span>
+			<div id="publicClientText">
 
-			<div id="publicClientText">(SOME PREVIOUS CLIENTS UNLISTED PER NDA)</div>
+                <p><span style="font-size: calc(28pt + 2vw);">PAST CLIENTELE</span></p>
+                <span class="play_text" style="font-style: italic;">SOME PREVIOUS CLIENTS UNLISTED PER NDA</span>
+
+            </div>
 
             <div class="rosterItem"><img class="rosterThumb" src="3.png" style="background-color: #FFFFFF;"></img><span class="rosterThumbText">BUFFALO FIELD CAMPAIGN</span></div>
 			<div class="rosterItem"><img class="rosterThumb" src="4.png"></img><span class="rosterThumbText">AMAZON MTURK</span></div>
@@ -100,6 +103,11 @@
         </div>
 
 		</center>
+
+        <script>document.addEventListener("DOMContentLoaded", function() {
+            playText();
+        });</script>
+
     </body>
 
 </html>
