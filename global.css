@@ -206,10 +206,11 @@ nav { background-color: none; }
 
 #tagline {
 
-    width: 100%;
+    width: 90%;
     height: 18rem;
 
-    padding: 7.5% 0 7.5% 0;
+    margin: 5% 0 5% 0;
+    padding: 5% 0 5% 0;
 
     align-content: center;
     justify-content: center;
@@ -252,14 +253,14 @@ nav { background-color: none; }
 
     background: linear-gradient(90deg, #0ff 10%, #09f 90%);
   color: #FFF;
-  padding: 1rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   border: none;
   border-radius: 2rem;
   font-size: 1.5rem;
   font-weight: 800;
   box-shadow: 0 0 24px 2px #0ff, 0 2px 12px #000;
   cursor: pointer;
-  margin: 2rem 0;
+  margin: 3rem 0 0 0;
   transition: background 0.2s, box-shadow 0.2s, color 0.2s;
 
 }
@@ -427,7 +428,7 @@ nav { background-color: none; }
 
     .contact {
 
-        width: 40%;
+        width: 50%;
 
         padding: 0.5rem 1.5rem;
 
@@ -437,7 +438,7 @@ nav { background-color: none; }
 
     .contact:hover,
     .contact:active {
-        width: 45%;
+        width: 55%;
     }
     
     #contactInfo {
