@@ -175,6 +175,10 @@ function borderlineMad(x) {
 }
 
 
+/*const play_text_group = document.querySelectorAll(".play_text");
+play_text_group.forEach(element => {
+  element.addEventListener("mouseenter", function() {oohColorful(element);});
+})*/
 
 const elementsToAnimate = document.querySelectorAll(".rosterItem");
 
