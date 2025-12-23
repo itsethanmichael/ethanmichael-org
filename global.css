@@ -206,19 +206,24 @@ nav { background-color: none; }
 
 #tagline {
 
-    width: 90%;
-    height: 18rem;
+    width: 100%;
+    height: 20rem;
 
-    margin: 5% 0 5% 0;
-    padding: 5% 0 5% 0;
+    margin: 10% 0 20% 0;
 
     align-content: center;
     justify-content: center;
     text-align: center;
 
-    font-size: calc(3vw + 15pt);
+    font-size: 5rem;
 
     border-radius: 10px;
+
+}
+
+#tagline_text {
+
+    width: 100%;
 
 }
 
@@ -439,6 +444,18 @@ nav { background-color: none; }
     .contact:hover,
     .contact:active {
         width: 55%;
+    }
+
+    #tagline {
+
+        width: 85%;
+        
+    }
+
+    #tagline_text {
+
+        font-size: 3rem;
+
     }
     
     #contactInfo {
