@@ -9,22 +9,23 @@ function contactLightbox() {
     const dm = document.getElementById("dm");
 
     lightbox.style.display = "block";
+    lightbox.style.height = "50%";
     lightboxX.innerHTML = "X";
     lightboxX.style.fontSize = "calc(100% + 4pt)";
 
     contactInfo.style.width = "100%";
-    contactInfo.style.height = "auto";
+    contactInfo.style.height = "80%";
     contactInfo.style.margin = "0 0 2.5% 0";
     contactInfo.style.color = "rgb(0, 255, 0)";
-    contactInfo.style.fontSize = "calc(100% + 2vh)"
+    contactInfo.style.fontSize = "calc(4rem + 1vh)"
     contactInfo.style.textAlign = "center";
+    contactInfo.style.alignContent = "center";
     contactInfo.id = "contactInfo";
 
     dm.style.width = "100%";
     dm.style.height = "auto";
     dm.style.margin = "2.5vh 0 5vh 0";
     dm.style.color = "cyan";
-    dm.style.fontSize = "calc(100% + 1vh)"
     dm.style.textAlign = "center";
     dm.innerHTML = "📥 DM <img src='IG.png' style='max-height:40px; min-height:1vh;'></img>";
     dm.id = "dm";
@@ -36,7 +37,6 @@ function contactLightbox() {
     email.style.height = "auto";
     email.style.margin = "2.5vh 0 5vh 0";
     email.style.color = "cyan";
-    email.style.fontSize = "calc(100% + 1vh)"
     email.style.textAlign = "center";
     email.innerHTML = "📧 EMAIL";
     email.id = "email";
@@ -44,7 +44,7 @@ function contactLightbox() {
     email.addEventListener("mouseout", () => { email.style.color = "cyan"; })
     email.onclick = function () {
       navigator.clipboard.writeText("business@ethanmichael.org");
-      window.alert("business@ethanmichael.org COPIED TO CLIPBOARD");
+      window.alert("BUSINESS@ETHANMICHAEL.ORG COPIED TO CLIPBOARD");
       window.location.href = "mailto:business@ethanmichael.org";
     };
 
@@ -106,39 +106,53 @@ function noColor(x) { x.style.color = "white"; }
 
 function playText() {
 
-  const text_list = [
-
-    "WITH ENOUGH TIME &amp; RESOURCES, WE CAN ACCOMPLISH ANYTHING",
-    "REACH OUT WITH YOUR MEANS &amp; REQUIREMENTS, AND WE'LL WOW YOU"
-  
-  ];
-
   const play_text = document.getElementsByClassName("play_text");
   for (let i = 0; i < play_text.length; i++) {
 
     oohColorful(play_text[i]);
 
+  }
+
+  setTimeout(function() { playText() }, 3000);
+
+}
+
+
+function textChange() {
+
+  const tagline = document.getElementById("tagline_text");
+
+  const text_list = [
+
+    "WITH ENOUGH TIME &amp; RESOURCES, WE CAN ACCOMPLISH ANYTHING",
+    "REACH OUT WITH YOUR MEANS &amp; REQUIREMENTS, AND WE'LL WOW YOU",
+    "ANY TASK CAN BE SOLVED VIA REDUCING IT TO ITS CONSTITUENT PARTS"
   
-    switch (play_text[i].innerHTML) {
+  ];
+
+  switch (tagline.innerHTML) {
 
       case (text_list[0]):
 
-        play_text[i].innerHTML = text_list[1];
+        tagline.innerHTML = text_list[1];
         break;
 
       case (text_list[1]):
 
-        play_text[i].innerHTML = text_list[0];
+        tagline.innerHTML = text_list[2];
+        break;
+
+      case (text_list[2]):
+
+        tagline.innerHTML = text_list[0];
         break;
 
     }
 
-
-  }
-
-  setTimeout(function() { playText() }, 5000);
+    setTimeout(function() { textChange() }, 3000);
 
 }
+
 
 function borderlineMad(x) {
 
