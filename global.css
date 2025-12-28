@@ -1,3 +1,18 @@
+a {
+    
+    color: cyan;
+    text-decoration: underline;
+    
+}
+
+a:hover { cursor: pointer; }
+
+li::marker {
+
+    color: #FFFFFF;
+
+}
+
 body {
 
     text-wrap: balance;
@@ -9,15 +24,6 @@ body {
 	padding-right: env(safe-area-inset-right);
     
 }
-
-a {
-    
-    color: cyan;
-    text-decoration: underline;
-    
-}
-
-a:hover { cursor: pointer; }
 
 nav { background-color: none; }
 
@@ -378,10 +384,10 @@ nav { background-color: none; }
     display: block;
     margin: 0 auto;
 
-    min-width: 50px;
-    width: 30vw;
-    max-width: 400px;
-    max-height: 400px;
+    min-width: 100px;
+    width: 40vw;
+    max-width: 500px;
+    max-height: 500px;
 
     border-radius: 10px;
 
@@ -449,7 +455,7 @@ nav { background-color: none; }
     #tagline {
 
         width: 85%;
-        
+
     }
 
     #tagline_text {
