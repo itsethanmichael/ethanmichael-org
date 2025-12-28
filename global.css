@@ -225,9 +225,9 @@ nav { background-color: none; }
 #tagline {
 
     width: 100%;
-    height: 20rem;
+    height: 30rem;
 
-    margin: 10% 0 10% 0;
+    margin: 0;
 
     align-content: center;
     justify-content: center;
@@ -479,7 +479,7 @@ nav { background-color: none; }
 
     #tagline_text {
 
-        font-size: 3rem;
+        font-size: 3.5rem;
 
     }
     
