@@ -17,8 +17,8 @@ blockquote {
 
   border-left: 10px solid #4caf50;
   border-radius: 10px;
-  margin: 20% 2.5% 20% 2.5%;
-  padding: 10px 15px;
+  margin: 20% 1% 20% 1%;
+  padding: 1% 2%;
   font-style: italic;
   background-color: rgba(255, 255, 255, 0.025);
 
@@ -29,7 +29,7 @@ body {
     text-wrap: balance;
     font-family: Impact;
     background-color: black;
-    color: #ee0059;
+    color: #ff005d;
 
     padding-left: env(safe-area-inset-left);
 	padding-right: env(safe-area-inset-right);
