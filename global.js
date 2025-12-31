@@ -105,15 +105,40 @@ window.addEventListener("resize", widthHeight);
 
 function oohColorful(x) {
 
-    let a = 255 * Math.random();
-    let b = 255 * Math.random();
-    let c = 255 * Math.random();
-    let d = Math.random();
-    if (d < 0.7) { d = 0.7; }
+  alphaMin = 0.7
 
-    let abcd = "rgba(" + a.toString() + ", " + b.toString() + ", " + c.toString() + ", " + d.toString() + ")";
+  let r = Math.random();
+  let g = Math.random();
+  let b = Math.random();
 
-    x.style.setProperty("color", abcd, "important");
+  let mean = (r + g + b) / 3;
+  r -= mean;
+  g -= mean;
+  b -= mean;
+
+  let mag = Math.sqrt(r*r + g*g + b*b);
+  r /= mag;
+  g /= mag;
+  b /= mag;
+
+  const intensity = 255;
+  const offset = 100;
+
+  r = offset + r * intensity;
+  g = offset + g * intensity;
+  b = offset + b * intensity;
+
+  r = Math.max(0, Math.min(255, r));
+  g = Math.max(0, Math.min(255, g));
+  b = Math.max(0, Math.min(255, b));
+
+  let a = alphaMin + Math.random() * (1 - alphaMin);
+
+  let z = `rgba(${r|0}, ${g|0}, ${b|0}, ${a.toFixed(2)})`;
+    
+
+  x.style.setProperty("color", z, "important");
+
 
 }
 

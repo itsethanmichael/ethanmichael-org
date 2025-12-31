@@ -225,10 +225,11 @@ nav { background-color: none; }
 
 #tagline {
 
-    width: 100%;
+    width: 80%;
     height: 30rem;
 
     margin: 0;
+    padding: 2.5%;
 
     align-content: center;
     justify-content: center;
@@ -430,6 +431,16 @@ nav { background-color: none; }
     align-content: center;
     margin: 10% 0 10% 0;
     font-size: calc(28pt + 2vw);
+    color:#FFFFFF;
+
+}
+
+.service_subheader {
+
+    margin: 5% 0 2% 0;
+    font-size: calc(1vh + 3.5rem);
+    color: #FFFFFF;
+    text-decoration: underline;
 
 }
 
@@ -491,6 +502,12 @@ nav { background-color: none; }
     #service_header {
 
         margin: 20% 0 20% 0;
+
+    }
+
+    .service_subheader {
+
+        font-size: calc(1vh + 2.5rem);
 
     }
     

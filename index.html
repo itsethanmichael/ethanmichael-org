@@ -95,7 +95,7 @@
 		
 			<hr>
 
-			<p class="play_text" id="service_header">COMPLEX PROBLEMS, THOROUGH SOLUTIONS</p>
+			<p id="service_header">COMPLEX PROBLEMS, THOROUGH SOLUTIONS</p>
 
 			<p style="font-size: calc(2vw + 12pt);">My network will tackle your <span class="play_text">backlogs</span>, <span class="play_text">bottlenecks</span>, <span class="play_text">technical snags</span>, and <span class="play_text">any other complex task</span> and return clean, finished deliverables.</p>
 			<p style="font-size: calc(2vw + 12pt);">Anything — <span class="play_text">business</span>, <span class="play_text">data</span>, <span class="play_text">systems</span>, <span class="play_text">operations</span>, <span class="play_text">talent</span>, <span class="play_text">management</span>; <span class="play_text">whatever you can't or won't handle</span> — remotely, securely, and discreetly.</p>
@@ -103,9 +103,9 @@
 
 			<hr>
 			
-			<p style="margin: 15% 0 10% 0; font-size: calc(2vw + 15pt); color:#FFFFFF;">SERVICES INCLUDE TASKING <span class="play_text">&</span> APPLICATION OF (BUT ARE NOT LIMITED TO) . . .</p>
+			<p style="width: 90%; margin: 15% 0 10% 0; font-size: calc(2vw + 15pt); color:#FFFFFF;">SERVICES INCLUDE (BUT ARE NOT LIMITED TO) . . .</p>
 
-				<p style="margin: 5% 0 2% 0; font-size: calc(3vw + 12pt); color: #FFFFFF; text-decoration: underline;">BUSINESS</p>
+				<p class="service_subheader">BUSINESS</p>
 				<p><span style="margin: 0; font-size: calc(3vw + 3rem); text-decoration: none;">💼</span></p>
 				<ul style="width: fit-content; margin: 5% 0 15% 0; font-size: calc(3vw + 12pt); text-align: start;">
 					<li>Sales <span class="play_text">&</span> Marketing</li>
@@ -124,7 +124,7 @@
 					<li>Strategy <span class="play_text">&</span> General Consultation</li>
 				</ul>
 
-				<p style="margin: 5% 0 2% 0; font-size: calc(3vw + 12pt); color: #FFFFFF; text-decoration: underline;">DATA</p>
+				<p class="service_subheader">DATA</p>
 				<p><span style="margin: 0; font-size: calc(3vw + 3rem); text-decoration: none;">📊</span></p>
 				<ul style="width: fit-content; margin: 5% 0 15% 0; font-size: calc(3vw + 12pt); text-align: start;">
 					<li>Auditing <span class="play_text">&</span> Reporting</li>
@@ -137,7 +137,7 @@
 					<li>Quality Reviewing</li>
 				</ul>
 
-				<p style="margin: 5% 0 2% 0; font-size: calc(3vw + 12pt); color: #FFFFFF; text-decoration: underline;">TECHNICALS</p>
+				<p class="service_subheader">TECHNICALS</p>
 				<p><span style="margin: 0; font-size: calc(3vw + 3rem); text-decoration: none;">⚙️</span></p>
 				<ul style="width: fit-content; margin: 5% 0 15% 0; font-size: calc(3vw + 12pt); text-align: start;">
 					<li>Systems <span class="play_text">&</span> Management</li>
@@ -150,7 +150,7 @@
 				</ul>
 
 				
-				<p style="margin: 5% 0 2% 0; font-size: calc(3vw + 12pt); color: #FFFFFF; text-decoration: underline;">CREATIVE</p>
+				<p class="service_subheader">CREATIVE</p>
 				<span style="margin: 0; font-size: calc(3vw + 3rem); text-decoration: none;">🎨</span>
 				<ul style="width: fit-content; margin-top: 5%; font-size: calc(3vw + 12pt); text-align: start;">
 					<li>Executive <span class="play_text">&</span> Management</li>
@@ -162,7 +162,7 @@
 				</ul>
 
 
-			<p style="margin: 15% 0 0 0; font-size: calc(2vw + 12pt);">Previous clientele has ranged from <span class="play_text">major digital platforms</span> and <span class="play_text">designer brands</span> to <span class="play_text">nonprofits</span>, <span class="play_text">restaurants</span>, <span class="play_text">advanced research labs</span>, <span class="play_text">world logistical offices</span>, <span class="play_text">critical development field teams</span>, <span class="play_text">dedicated artists</span>, and much more.</p>
+			<p style="margin: 15% 0 0 0; font-size: calc(2vw + 12pt);">Previous clientele have ranged from <span class="play_text">major digital platforms</span> and <span class="play_text">designer brands</span> to <span class="play_text">nonprofits</span>, <span class="play_text">restaurants</span>, <span class="play_text">advanced research labs</span>, <span class="play_text">world logistical offices</span>, <span class="play_text">critical development field teams</span>, <span class="play_text">dedicated artists</span>, and much more.</p>
 
 			<blockquote>
 
@@ -216,8 +216,8 @@
 			document.addEventListener("DOMContentLoaded", function() {
   				playText();
 				const e = document.getElementById("tagline");
-				//e.style.border = "4px dashed red";
-				//borderlineMad(e);
+				e.style.border = "4px dashed red";
+				borderlineMad(e);
 				textChange();
 			});
 		</script>
