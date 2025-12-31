@@ -22,7 +22,7 @@ function contactLightbox() {
     contactInfo.style.alignContent = "center";
     contactInfo.id = "contactInfo";
 
-    dm.style.width = "100%";
+    /*dm.style.width = "100%";
     dm.style.height = "auto";
     dm.style.margin = "2.5vh 0 5vh 0";
     dm.style.color = "cyan";
@@ -31,7 +31,7 @@ function contactLightbox() {
     dm.id = "dm";
     dm.addEventListener("mouseover", () => { dm.style.cursor = "pointer"; dm.style.color = "yellow"; });
     dm.addEventListener("mouseout", () => { dm.style.color = "cyan"; })
-    dm.onclick = function () { goTo(1); };
+    dm.onclick = function () { goTo(1); };*/
 
     email.style.width = "100%";
     email.style.height = "auto";
@@ -46,6 +46,21 @@ function contactLightbox() {
       navigator.clipboard.writeText("business@ethanmichael.org");
       window.alert("BUSINESS@ETHANMICHAEL.ORG COPIED TO CLIPBOARD");
       window.location.href = "mailto:business@ethanmichael.org";
+    };
+
+    phone.style.width = "100%";
+    phone.style.height = "auto";
+    phone.style.margin = "2.5vh 0 5vh 0";
+    phone.style.color = "cyan";
+    phone.style.textAlign = "center";
+    phone.innerHTML = "📲 PHONE";
+    phone.id = "phone";
+    phone.addEventListener("mouseover", () => { phone.style.cursor = "pointer"; phone.style.color = "yellow"; });
+    phone.addEventListener("mouseout", () => { phone.style.color = "cyan"; })
+    phone.onclick = function () {
+      navigator.clipboard.writeText("2154885551");
+      window.alert("2154885551 COPIED TO CLIPBOARD");
+      window.location.href = "tel:+12154885551";
     };
 
 }
