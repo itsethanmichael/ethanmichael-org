@@ -37,24 +37,40 @@ body {
     
 }
 
-nav { background-color: none; }
+#nav_links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
 
-.navLink {
-    
-    width: 20vw;
-    margin: 0;
-    font-size: calc(10px + 100%);
-    color: cyan;
-    border: 2px dashed red;
-	border-radius: 10px;
+.nav_link {
+
+    min-width: 20%;
+    max-width: 33.333%;
+
+    background: linear-gradient(90deg, #0ff 10%, #09f 90%);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 3rem;
+    font-weight: 800;
+    box-shadow: 0 0 24px 2px #0ff, 0 2px 12px #000;
+    cursor: pointer;
+    margin: 2rem;
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
     
 }
-.navLink:hover {
+.nav_link:hover {
     
     cursor: pointer;
     color: #ee0059;
-    border: 2px solid green;
     
+}
+
+.nav_link_text {
+    font-size: calc(0.5rem + 1.5vw);
 }
 
 #homeDiv {
@@ -153,14 +169,21 @@ nav { background-color: none; }
     flex-direction: row;
     position: fixed;
     z-index: 100;
-    width: 90%;
+    min-width: 80%;
+    width: fit-content;
     justify-content: space-between;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.075);
     border-radius: 5px;
 }
 
+.control_element {
+    
+}
+
 #light_dark {
+    margin: 0 0 0 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
 }
 
@@ -232,6 +255,7 @@ nav { background-color: none; }
 #EthanMichael2 {
     
     font-size: 1rem;
+    align-content: center;
     
 }
 
@@ -304,6 +328,22 @@ nav { background-color: none; }
   cursor: pointer;
   margin: 3rem 0 0 0;
   transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+
+}
+
+.contact_lite {
+
+    background: linear-gradient(90deg, #0ff 10%, #09f 90%);
+  color: #FFF;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 0.5rem;
+  font-weight: 100;
+  box-shadow: 0 0 12px 2px #0ff, 0 2px 6px #000;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  align-content: center;
 
 }
 
@@ -493,10 +533,6 @@ nav { background-color: none; }
 
 	}
 
-    .navLink {
-        width: 50vw;
-    }
-
     #rosterDiv {
         margin: 10% 0 10% 0;
     }
@@ -518,6 +554,19 @@ nav { background-color: none; }
     .contact:hover,
     .contact:active {
         width: 55%;
+    }
+
+    #nav_links {
+        width: 90%;
+    }
+
+    .nav_link {
+        padding: 0.5rem;
+        font-size: calc(1rem + 1vw);
+    }
+
+    .nav_link_text {
+        font-size: calc(0.5rem + 1vw);
     }
 
     #tagline {
@@ -563,12 +612,6 @@ nav { background-color: none; }
         left: 25%;
 			
 	}
-
-    .navLink {
-
-        width: 20vw;
-
-    }
 
 }
 
