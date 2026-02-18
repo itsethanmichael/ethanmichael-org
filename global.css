@@ -182,7 +182,7 @@ body {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.075);
     border-radius: 5px;
-    
+
 }
 
 #light_dark {
@@ -354,7 +354,7 @@ body {
   color: #FFF;
   padding: 0 2rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   font-size: 0.5rem;
   font-weight: 100;
   box-shadow: 0 0 6px 1px #0ff, 0 1px 2px #000;
@@ -550,6 +550,12 @@ body {
         left: 7.5%;
 
 	}
+    
+    #EthanMichael2 {
+    
+        font-size: 0.8rem;
+    
+    }
 
     #header {
         margin: 20% 0 10% 0;
