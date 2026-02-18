@@ -298,3 +298,11 @@ light_dark = document.getElementById("light_dark");
 light_dark.innerHTML = "☀️";
 light_dark.addEventListener("click", lightDark);
 lightDark();
+
+document.getElementById("wdkshsk").addEventListener("click", () => {
+  window.open("https://ethanmichael.org/#");
+});
+
+document.getElementById("better_my_english").addEventListener("click", () => {
+  window.open("https://bettermyenglish.com/");
+});
