@@ -32,6 +32,8 @@ body {
     color: white;
     /*color: #ff005d;*/
 
+    justify-items: center;
+
     padding-left: env(safe-area-inset-left);
 	padding-right: env(safe-area-inset-right);
     
@@ -505,8 +507,8 @@ body {
 #service_header {
 
     width: 90%;
-    height:10rem;
-    line-height: 1rem;
+    height: 10rem;
+    line-height: 3rem;
     text-align: center;
     align-content: center;
     margin: 10% 0 10% 0;
@@ -642,7 +644,7 @@ body {
 
     #service_header {
 
-        line-height: 5rem;
+        line-height: 6rem;
 
     }
 
