@@ -148,6 +148,22 @@ nav { background-color: none; }
 
 }
 
+#control_bar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 100;
+    width: 90%;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.075);
+    border-radius: 5px;
+}
+
+#light_dark:hover {
+    cursor: pointer;
+}
+
 #header {
 
     display: flex;
@@ -201,7 +217,6 @@ nav { background-color: none; }
     
     margin: 2% 0 2% 0;
     font-size: calc(2vw + 14pt);
-    color: #ffffff;
     
 }
 #EthanMichael:hover {
@@ -212,9 +227,7 @@ nav { background-color: none; }
 
 #EthanMichael2 {
     
-    margin: 2% 0 2% 0;
-    font-size: calc(1vw + 12pt);
-    color: #ffffff;
+    font-size: 1rem;
     
 }
 

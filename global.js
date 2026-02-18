@@ -1,3 +1,43 @@
+function lightDark() {
+
+  const control_bar = document.getElementById("control_bar");
+  const light_dark = document.getElementById("light_dark");
+  const roster_thumbs = document.querySelectorAll(".rosterThumb");
+
+  switch (light_dark.innerHTML) {
+
+    case ("🌙"):
+
+      document.body.style.color = "black";
+      document.body.style.backgroundColor = "white";
+
+      control_bar.style.color = "black";
+      control_bar.style.background = "rgba(0, 0, 0, 0.075)";
+
+      light_dark.innerHTML = "☀️";
+
+      break;
+
+    case ("☀️"):
+
+      document.body.style.color = "white";
+      document.body.style.backgroundColor = "black";
+
+      control_bar.style.color = "white";
+      control_bar.style.background = "rgba(255, 255, 255, 0.075)";
+
+      roster_thumbs.forEach(element => {
+        element.style.backgroundColor = "rgb(255, 255, 255)"
+      });
+
+      light_dark.innerHTML = "🌙";
+
+      break;
+
+  }
+
+}
+
 function contactLightbox() {
 
     const lightbox = document.getElementById("lightbox");
@@ -142,7 +182,7 @@ function oohColorful(x) {
 
 }
 
-function noColor(x) { x.style.color = "white"; }
+function noColor(x) { x.style.color = ""; }
 
 function playText() {
 
@@ -249,3 +289,8 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 elementsToAnimate.forEach(element => {
   observer.observe(element);
 });
+
+light_dark = document.getElementById("light_dark");
+light_dark.innerHTML = "☀️";
+light_dark.addEventListener("click", lightDark);
+lightDark();
