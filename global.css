@@ -168,10 +168,13 @@ body {
 }
 
 #control_bar {
+
     display: flex;
     flex-direction: row;
     position: fixed;
     top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 100;
     min-width: 80%;
     width: fit-content;
@@ -179,6 +182,7 @@ body {
     padding: 1rem;
     background: rgba(255, 255, 255, 0.075);
     border-radius: 5px;
+    
 }
 
 #light_dark {
