@@ -160,6 +160,10 @@ nav { background-color: none; }
     border-radius: 5px;
 }
 
+#light_dark {
+    border-radius: 5px;
+}
+
 #light_dark:hover {
     cursor: pointer;
 }

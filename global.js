@@ -15,6 +15,7 @@ function lightDark() {
       control_bar.style.background = "rgba(0, 0, 0, 0.075)";
 
       light_dark.innerHTML = "☀️";
+      light_dark.style.background = "rgba(0, 0, 0, 0.085)";
 
       break;
 
@@ -31,6 +32,7 @@ function lightDark() {
       });
 
       light_dark.innerHTML = "🌙";
+      light_dark.style.background = "rgba(255, 255, 255, 0.085)";
 
       break;
 
