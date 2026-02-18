@@ -29,7 +29,8 @@ body {
     text-wrap: balance;
     font-family: Impact;
     background-color: black;
-    color: #ff005d;
+    color: white;
+    /*color: #ff005d;*/
 
     padding-left: env(safe-area-inset-left);
 	padding-right: env(safe-area-inset-right);
