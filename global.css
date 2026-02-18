@@ -51,7 +51,7 @@
         min-width: 50px;
         min-height: 50px;
         width: calc(100px + 1vw);
-        height: calc(100px + 1vw);
+        height: calc(50px + 1vw);
         align-content: center;
         align-items: center;
         background: linear-gradient(90deg, #0ff 10%, #09f 90%);
@@ -598,7 +598,7 @@
         }
 
         #nav_links {
-            width: 80%;
+            width: 70%;
         }
 
         .nav_link {
