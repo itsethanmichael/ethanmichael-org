@@ -53,10 +53,10 @@ body {
     max-width: 33.333%;
 
     background: linear-gradient(90deg, #0ff 10%, #09f 90%);
-    padding: 1rem 3rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     box-shadow: 0 0 24px 2px #0ff, 0 2px 12px #000;
     cursor: pointer;
@@ -517,7 +517,6 @@ body {
     align-content: center;
     margin: 10% 0 10% 0;
     font-size: calc(28pt + 2vw);
-    color:#FFFFFF;
 
 }
 
@@ -589,7 +588,7 @@ body {
     }
 
     .nav_link {
-        padding: 0.5rem;
+        padding: 0.25rem;
         font-size: calc(1rem + 1vw);
     }
 
