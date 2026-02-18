@@ -454,6 +454,11 @@ nav { background-color: none; }
 
 }
 
+#face {
+    margin: 10% 0 0 0;
+    max-width: 20%;
+}
+
 .popsIn {
     opacity: 0;
 }
@@ -523,6 +528,10 @@ nav { background-color: none; }
 
         font-size: calc(1vh + 2.5rem);
 
+    }
+
+    #face {
+        max-width: 50%;
     }
     
 }
