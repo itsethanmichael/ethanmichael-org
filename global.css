@@ -421,6 +421,17 @@ nav { background-color: none; }
 }
 
 
+#services_section {
+    width: 90%;
+    line-height: 5rem;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
 #service_header {
 
     width: 90%;
@@ -441,6 +452,10 @@ nav { background-color: none; }
     color: #FFFFFF;
     text-decoration: underline;
 
+}
+
+.popsIn {
+    opacity: 0;
 }
 
 

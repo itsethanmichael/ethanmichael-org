@@ -220,12 +220,12 @@ play_text_group.forEach(element => {
   element.addEventListener("mouseenter", function() {oohColorful(element);});
 })*/
 
-const elementsToAnimate = document.querySelectorAll(".rosterItem");
+const elementsToAnimate = document.querySelectorAll(".rosterItem, .popsIn");
 
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.7
+  threshold: 0.5
 };
 
 const observerCallback = (entries, observer) => {
@@ -245,10 +245,7 @@ const observerCallback = (entries, observer) => {
 };
 
 const observer = new IntersectionObserver(observerCallback, observerOptions);
-console.log(elementsToAnimate);
 
 elementsToAnimate.forEach(element => {
   observer.observe(element);
 });
-
-
