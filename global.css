@@ -168,6 +168,7 @@ body {
     display: flex;
     flex-direction: row;
     position: fixed;
+    top: 1rem;
     z-index: 100;
     min-width: 80%;
     width: fit-content;
@@ -195,7 +196,7 @@ body {
     align-content: center;
     justify-content: space-between;
 
-    margin: 0 0 10% 0;
+    margin: 7.5% 0 10% 0;
 
 }
 
@@ -490,7 +491,7 @@ body {
 
     width: 90%;
     height:10rem;
-    line-height: 100%;
+    line-height: 1rem;
     text-align: center;
     align-content: center;
     margin: 10% 0 10% 0;
@@ -529,6 +530,10 @@ body {
 
 	}
 
+    #header {
+        margin: 20% 0 10% 0;
+    }
+
     #rosterDiv {
         margin: 10% 0 10% 0;
     }
@@ -553,7 +558,7 @@ body {
     }
 
     #nav_links {
-        width: 90%;
+        width: 80%;
     }
 
     .nav_link {
@@ -608,6 +613,23 @@ body {
         left: 25%;
 			
 	}
+
+}
+
+@media (min-aspect-ratio: 2/1) {
+
+    #services_section {
+
+        line-height: 10rem;
+
+    }
+
+
+    #service_header {
+
+        line-height: 5rem;
+
+    }
 
 }
 
