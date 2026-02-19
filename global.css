@@ -62,7 +62,7 @@
         font-weight: 700;
         box-shadow: 0 0 24px 2px #0ff, 0 2px 12px #000;
         cursor: pointer;
-        margin: 2rem;
+        margin: 1rem;
         transition: background 0.2s, box-shadow 0.2s, color 0.2s;
 
         align-items: center;
