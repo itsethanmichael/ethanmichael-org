@@ -52,13 +52,11 @@
         min-height: 50px;
         width: calc(100px + 1vw);
         height: calc(50px + 1vw);
-        align-content: center;
-        align-items: center;
         background: linear-gradient(90deg, #0ff 10%, #09f 90%);
 
         border: none;
         border-radius: 0.5rem;
-        font-size: 2rem;
+        font-size: 0rem;
         font-weight: 700;
         box-shadow: 0 0 24px 2px #0ff, 0 2px 12px #000;
         cursor: pointer;
