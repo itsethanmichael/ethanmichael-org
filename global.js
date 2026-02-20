@@ -48,7 +48,7 @@ function contactLightbox() {
     const contactInfo = document.getElementById("contactInfo");
     const email = document.getElementById("email");
     const phone = document.getElementById("phone");
-    const dm = document.getElementById("dm");
+    //const dm = document.getElementById("dm");
 
     lightbox.style.display = "block";
     lightbox.style.height = "50%";
@@ -62,19 +62,23 @@ function contactLightbox() {
     contactInfo.style.fontSize = "calc(4rem + 1vh)"
     contactInfo.style.textAlign = "center";
     contactInfo.style.alignContent = "center";
+    contactInfo.style.alignItems = "center";
+    contactInfo.style.justifyItems = "center";
     contactInfo.id = "contactInfo";
 
-    /*dm.style.width = "100%";
+    /*dm.style.display = "flex";
+    dm.style.width = "100%";
     dm.style.height = "auto";
     dm.style.margin = "2.5vh 0 5vh 0";
     dm.style.color = "cyan";
     dm.style.textAlign = "center";
     dm.innerHTML = "📥 DM <img src='IG.png' style='max-height:40px; min-height:1vh;'></img>";
     dm.id = "dm";
-    dm.addEventListener("mouseover", () => { dm.style.cursor = "pointer"; dm.style.color = "yellow"; });
+    dm.addEventListener("mouseover", () => { dm.style.display = "none"; dm.style.cursor = "pointer"; dm.style.color = "yellow"; });
     dm.addEventListener("mouseout", () => { dm.style.color = "cyan"; })
     dm.onclick = function () { goTo(1); };*/
 
+    email.style.display = "flex";
     email.style.width = "100%";
     email.style.height = "auto";
     email.style.margin = "2.5vh 0 5vh 0";
@@ -91,6 +95,7 @@ function contactLightbox() {
       window.location.href = "mailto:business@ethanmichael.org";
     };
 
+    phone.style.display = "flex";
     phone.style.width = "100%";
     phone.style.height = "auto";
     phone.style.margin = "2.5vh 0 5vh 0";
@@ -106,6 +111,51 @@ function contactLightbox() {
       window.alert("2154885551 COPIED TO CLIPBOARD");
       window.location.href = "tel:+12154885551";
     };
+
+}
+
+function soonLightbox() {
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxX = document.getElementById("lightboxX");
+
+    const contactInfo = document.getElementById("contactInfo");
+    const soon = document.getElementById("soon");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+
+    lightbox.style.display = "block";
+    lightbox.style.height = "50%";
+    lightboxX.innerHTML = "X";
+    lightboxX.style.fontSize = "calc(100% + 4pt)";
+
+    contactInfo.style.width = "100%";
+    contactInfo.style.height = "80%";
+    contactInfo.style.margin = "0 0 2.5% 0";
+    contactInfo.style.color = "rgb(0, 255, 0)";
+    contactInfo.style.fontSize = "calc(4rem + 1vh)"
+    contactInfo.style.textAlign = "center";
+    contactInfo.style.alignContent = "center";
+    contactInfo.style.alignItems = "center";
+    contactInfo.style.justifyItems = "center";
+    contactInfo.id = "contactInfo";
+
+    phone.style.display = "none";
+    email.style.display = "none";
+
+    soon.style.display = "flex";
+    soon.style.width = "fit-content";
+    soon.style.height = "auto";
+    soon.style.margin = "2.5vh 0 5vh 0";
+    soon.style.color = "red";
+    soon.style.fontSize = "90%";
+    soon.style.textAlign = "center";
+    soon.style.alignSelf = "center";
+    soon.innerHTML = "COMING SOON";
+    soon.id = "soon";
+    soon.addEventListener("click", () => { soon.style.display = "none"; closeLightbox(); contactLightbox(); });
+    soon.addEventListener("mouseover", () => { soon.style.cursor = "pointer"; soon.style.color = "yellow"; });
+    soon.addEventListener("mouseout", () => { soon.style.color = "red"; oohColorful(soon); })
 
 }
 
@@ -137,7 +187,27 @@ function goTo(x) {
 
       case 3:
 
-        window.location.href = "https://ethanmichael.org/past_clientele.html"
+        window.location.href = "https://ethanmichael.org/ai.html";
+        break;
+      
+      case 4:
+
+        window.location.href = "https://ethanmichael.org/data.html";
+        break;
+      
+      case 5:
+
+        window.location.href = "https://ethanmichael.org/hsk.html";
+        break;
+      
+      case 6:
+
+        window.open("https://open.spotify.com/artist/1h5vBdRaMwqmuVgMHcAisG");
+        break;
+      
+      case 7:
+
+        window.open("https://music.apple.com/us/artist/ethan-michael/1514532987");
         break;
       
   }
@@ -306,3 +376,5 @@ document.getElementById("wdkshsk").addEventListener("click", () => {
 document.getElementById("better_my_english").addEventListener("click", () => {
   window.open("https://bettermyenglish.com/");
 });
+
+//document.getElementById("").addEventListener("click", goTo());

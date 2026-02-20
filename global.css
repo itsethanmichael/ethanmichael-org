@@ -179,6 +179,23 @@ body {
 
 }
 
+#contactInfo {
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contact_button {
+
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+}
+
 #control_bar {
 
     display: flex;
@@ -559,6 +576,12 @@ pointer-events: none;
     
 }
 
+.social_img:hover {
+
+    cursor: pointer;
+
+}
+
 * { /*border: 2px solid red;*/ }
 
 @media (max-aspect-ratio: 1/1) {
@@ -631,6 +654,9 @@ pointer-events: none;
     
     #contactInfo {
         font-size: calc(3rem + 1vh);
+        justify-items: center;
+        align-items: center;
+        align-content: center;
     }
 
     #service_header {
