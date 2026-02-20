@@ -269,7 +269,7 @@ const elementsToAnimate = document.querySelectorAll(".rosterItem, .popsIn");
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.3333
+  threshold: 0.25
 };
 
 const observerCallback = (entries, observer) => {
