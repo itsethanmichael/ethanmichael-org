@@ -48,6 +48,8 @@ function contactLightbox() {
     const contactInfo = document.getElementById("contactInfo");
     const email = document.getElementById("email");
     const phone = document.getElementById("phone");
+    const soon = document.getElementById("soon");
+    soon.style.display = "none";
     //const dm = document.getElementById("dm");
 
     lightbox.style.display = "block";
