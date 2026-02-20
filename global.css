@@ -648,6 +648,12 @@ pointer-events: none;
     #face {
         max-width: 50%;
     }
+
+    #social_imgs {
+
+        margin: 10% 0 0 0;
+
+    }
     
 }
 
