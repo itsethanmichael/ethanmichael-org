@@ -555,19 +555,8 @@ pointer-events: none;
 .social_img {
 
     height: calc(50px + 0.5vw);
+    margin: 5%;
     
-}
-
-#ig {
-
-    margin: 5%;
-
-}
-
-#yt {
-
-    margin: 5%;
-
 }
 
 * { /*border: 2px solid red;*/ }
