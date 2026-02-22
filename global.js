@@ -174,7 +174,7 @@ function goTo(x) {
 
     case 0:
 
-      window.location.href = "https://ethanmichael.org/";
+      window.location.href = "./index.html";
       break;
 
     case 1:
@@ -189,12 +189,12 @@ function goTo(x) {
 
       case 3:
 
-        window.location.href = "https://ethanmichael.org/ai.html";
+        window.location.href = "./ai.html";
         break;
       
       case 4:
 
-        window.location.href = "https://ethanmichael.org/data.html";
+        window.location.href = "./data.html";
         break;
       
       case 5:

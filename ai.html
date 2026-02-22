@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>AI | ETHAN MICHAEL & CO.</title>
+		<meta name="description" content="AI | ETHAN MICHAEL & CO.">
+				
+		<meta property="og:title" content="AI | ETHAN MICHAEL & CO.">
+		<meta property="og:description" content="AI | ETHAN MICHAEL & CO.">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.ethanmichael.org/ai.html">
+		<meta property="og:image" content="logo2.png">
+		<meta property="og:image:secure_url" content="logo2.png">
+		<meta property="og:image:alt" content="AI | ETHAN MICHAEL & CO.">
+		<meta property="og:site_name" content="AI | ETHAN MICHAEL & CO.">
+			    
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="AI | ETHAN MICHAEL & CO.">
+		<meta name="twitter:description" content="AI | ETHAN MICHAEL & CO.">
+		<meta name="twitter:image" content="logo2.png">
+			    
+		<link rel="icon" type="image/png" sizes="32x32" href="logo2.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="logo2.png">
+			
+		<link href="global.css" rel="stylesheet"></link>
+	
+</head>
+	
+	<body>
+	<center style="width: 100%;">
+		
+		<div style="width: 100%;">
+
+			<div id="control_bar" style="justify-self: center;">
+
+			<div id="EthanMichael2" class="control_element" onclick="goTo(0)" onmouseenter="oohColorful(this)" onmouseleave="noColor(this)"><img id="logo_lite" src="logo2.png"/>ETHAN MICHAEL & CO.</div>
+
+			<div style="display: flex; flex-direction: row;">
+
+				<div class="contact_lite" onclick="contactLightbox()"><h2>📲 CONTACT</h2></div>
+
+				<div id="light_dark" class="control_element"></div>
+				
+			</div>
+
+		</div>
+		
+		<div id="header" style="flex-direction: column;">
+
+			<div id="nav_links">
+
+				<div class="nav_link"><img src="25.png" style="width: calc(30px + 2vw);" onclick="goTo(3)"/></div>
+				<div class="nav_link"><img src="26.png" style="width: calc(30px + 2vw);" onclick="goTo(4)"/></div>
+				<div id="wdkshsk" class="nav_link"><img src="24.png" style="width: calc(30px + 2vw);" onclick="soonLightbox()"/></div>
+				<div id="better_my_english" class="nav_link"><img src="23.png" style="width: calc(25px + 2vw);"/></div>
+
+			</div>
+
+		</div>
+
+		<hr style="width: 80%;">
+			    
+		<br>
+			
+		<div id="footer">
+			
+			<div class="contact" onclick="contactLightbox()"><h2>📲 CLICK HERE TO GET IN TOUCH</h2></div>
+
+			<div id="social_imgs">
+
+				<img id="yt" class="social_img" src="1.png" onclick="goTo(2)"/>
+				<img id="spotify" class="social_img" src="27.png" onclick="goTo(6)"/>
+				<img id="apple" class="social_img" src="28.png" onclick="goTo(7)"/>
+
+			</div>
+			
+			<div id="copyright">ETHAN MICHAEL & CO. © 2023 - 2026</div>
+					
+		</div>
+			
+	</center>
+			
+		<div id="lightbox">
+					
+			<div id="lightboxBar">
+						
+				<div id="lightboxX" onclick="closeLightbox()"></div>
+						
+			</div>
+					
+			<div id="contactInfo">
+				<div id="email" class="contact_button"></div>
+				<div id="phone" class="contact_button"></div>
+				<div id="soon" class="contact_button"></div>
+			</div>
+			
+		</div>
+
+		<script src="global.js">widthHeight();</script>
+
+		<script>
+
+			document.addEventListener("DOMContentLoaded", function() {
+
+  				playText();
+				textChange();
+				
+			});
+			
+			soonLightbox();
+
+		</script>
+		    
+	</body>
+
+</html>

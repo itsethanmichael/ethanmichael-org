@@ -126,6 +126,13 @@ body {
 
 }
 
+#logo_lite {
+
+    height: 1.5rem;
+    margin: 0 0.666rem 0 0;
+
+}
+
 #lightbox {
 
     display: none;
@@ -289,8 +296,16 @@ body {
 
 #EthanMichael2 {
     
+    display: flex;
+    flex-direction: row;
     font-size: 1rem;
     align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center ;
+    justify-items: center;
+    justify-self: center;
+    
     
 }
 
@@ -593,11 +608,23 @@ pointer-events: none;
         left: 7.5%;
 
     }
+
+    #logo_lite {
+
+        height: 1rem;
+
+    }
     
     #EthanMichael2 {
     
-        font-size: 0.8rem;
+        font-size: 0.666rem;
     
+    }
+
+    .contact_lite {
+
+        font-size: 0.4rem;
+
     }
 
     #header {
@@ -648,7 +675,7 @@ pointer-events: none;
 
     #tagline_text {
 
-        font-size: 3rem;
+        font-size: 2.5rem;
 
     }
     
