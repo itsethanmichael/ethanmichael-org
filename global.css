@@ -725,6 +725,18 @@ pointer-events: none;
         margin: 10% 0 0 0;
 
     }
+
+    #prompt_eng_btn_text {
+        font-size: 0.666rem;
+    }
+
+    #rag_so_btn_text {
+        font-size: 0.666rem;
+    }
+
+    #multi_toolcall_btn_text {
+        font-size: 0.666rem;
+    }
     
 }
 
