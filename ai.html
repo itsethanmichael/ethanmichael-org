@@ -72,6 +72,8 @@
 			<div id="multi_toolcall_btn" class="nav_link"><div id="multi_toolcall_btn_text" class="nav_link_text">MUTLI / TOOLCALL</div></div>
 		</div>
 
+		<div><h3>Having trouble viewing the report?</h3> <a id="help_a" href="#">Click here.</a></div>
+
 		<iframe id="pdf_reader" src="/pdfjs/web/viewer.html?file=./docs/1.pdf"></iframe>
 
 		<hr style="width: 80%;">
@@ -119,10 +121,14 @@
 			const prompt_eng_btn = document.getElementById("prompt_eng_btn");
 			const rag_so_btn = document.getElementById("rag_so_btn");
 			const multi_toolcall_btn = document.getElementById("multi_toolcall_btn");
+
+			const help_a = document.getElementById("help_a");
+
 			const pdf_btns = [prompt_eng_btn, rag_so_btn, multi_toolcall_btn];
 
 			function setPDF(x) {
 				document.getElementById("pdf_reader").src = `./docs/${x}.pdf`;
+				help_a.href = `./docs/${x}.pdf`;
 			}
 
 			function setPDFColor(x) {
