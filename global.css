@@ -316,7 +316,7 @@ body {
     
 }
 
-#pdf_iframe {
+#pdf_reader {
 
     width: 75%;
     height: 100vh;
@@ -651,7 +651,7 @@ pointer-events: none;
         width: 50vw;
     }
 
-    #pdf_iframe {
+    #pdf_reader {
 
         width: 90%;
     
