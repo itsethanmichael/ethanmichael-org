@@ -1,0 +1,87 @@
+$env:OPENAI_API_KEY="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"
+
+python rag_demo.py 
+
+▶ What was Apple’s total Q2 2025 revenue? Baseline: I'm sorry, but I don't have access to real-time data or future events, including financial results for Apple or any other company in Q2 2025. For the most accurate and up-to-date information, please check Apple's official financial reports or reliable financial news sources. RAG+Structured: { "question": "What was Apple’s total Q2 2025 revenue?", "answer": "$95.4B", "sources": ["apple_q2_2025"] } 
+
+▶ Which company had the highest quarterly revenue? Baseline: As of my last knowledge update in October 2023, the company with the highest quarterly revenue was Saudi Aramco, which reported a record revenue of $48.4 billion for the second quarter of 2022. However, please verify with the latest financial reports or news sources, as this information may have changed since then. RAG+Structured: { "question": "Which company had the highest quarterly revenue?", "answer": "The context does not provide specific information about the companies or their quarterly revenues.", "sources": [] } 
+
+▶ How much did Tesla earn in net income? Baseline: As of my last knowledge update in October 2023, Tesla's net income for the full year 2022 was approximately $12.6 billion. For the most current figures, including any updates for 2023, I recommend checking Tesla's latest financial reports or reliable financial news sources. RAG+Structured: { "question": "How much did Tesla earn in net income?", "answer": "$2.9B", "sources": "[tesla_q2_2025]" } 
+
+▶ List each company and its services/cloud contribution. Baseline: Here’s a list of some major cloud service providers and their contributions to the cloud computing landscape: 
+
+Amazon Web Services (AWS) 
+
+Services: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS) 
+
+Contributions: Offers a wide range of services including computing power (EC2), storage (S3), databases (RDS), machine learning (SageMaker), and serverless computing (Lambda). 
+
+Microsoft Azure 
+
+Services: IaaS, PaaS, SaaS 
+
+Contributions: Provides services such as virtual machines, app services, Azure SQL Database, Azure Functions, and Azure DevOps, along with strong integration with Microsoft products. 
+
+Google Cloud Platform (GCP) 
+
+Services: IaaS, PaaS, SaaS 
+
+Contributions: Offers services like Google Compute Engine, Google Kubernetes Engine, BigQuery for data analytics, and Firebase for mobile app development. 
+
+IBM Cloud 
+
+Services: IaaS, PaaS, SaaS 
+
+Contributions: Provides cloud computing services including IBM Watson for AI, IBM Cloud Kubernetes Service, and various enterprise solutions. 
+
+Oracle Cloud 
+
+Services: IaaS, PaaS, SaaS 
+
+Contributions: Focuses on database services, offering Oracle Database Cloud, Oracle Cloud Applications (SaaS), and cloud infrastructure services. 
+
+Alibaba Cloud 
+
+Services: IaaS, PaaS, SaaS 
+
+Contributions: Provides a range of services including Elastic Compute Service (ECS), ApsaraDB for databases, and machine learning services. 
+
+Salesforce 
+
+Services: SaaS 
+
+Contributions: Primarily known for its customer relationship management (CRM) software, it also offers a platform for building applications (Salesforce Platform). 
+
+DigitalOcean 
+
+Services: IaaS, PaaS 
+
+Contributions: Focuses on simplicity and developer-friendly services, offering Droplets (virtual machines), Kubernetes, and managed databases. 
+
+VMware Cloud 
+
+Services: IaaS, PaaS 
+
+Contributions: Provides virtualization and cloud infrastructure services, including VMware Cloud on AWS and VMware Tanzu for Kubernetes. 
+
+Linode 
+
+Services: IaaS 
+
+Contributions: Offers cloud hosting services with a focus on simplicity and cost-effectiveness, providing virtual servers and block storage. 
+
+Rackspace Technology 
+
+Services: Managed cloud services 
+
+Contributions: Provides managed services across various cloud platforms, including AWS, Azure, and GCP, focusing on cloud migration and management. 
+
+Heroku 
+
+Services: PaaS 
+
+Contributions: A platform for building, running, and operating applications entirely in the cloud, known for its ease of use and integration with Salesforce. 
+
+This list is not exhaustive, as there are many other cloud service providers and niche players in the market, but these are some of the most prominent ones. RAG+Structured: { "question": "List each company and its services/cloud contribution.", "answer": { "Apple": { "services/cloud contribution": "$26.6B" } }, "sources": ["apple_q2_2025"] } 
+
+✅ Results written to 'results/' directory. 

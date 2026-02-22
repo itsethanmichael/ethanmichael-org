@@ -51,7 +51,7 @@
 		
 		<div id="header" style="flex-direction: column;">
 
-			<div id="nav_links">
+			<div class="nav_links">
 
 				<div class="nav_link"><img src="25.png" style="width: calc(30px + 2vw);" onclick="goTo(3)"/></div>
 				<div class="nav_link"><img src="26.png" style="width: calc(30px + 2vw);" onclick="goTo(4)"/></div>
@@ -61,6 +61,18 @@
 			</div>
 
 		</div>
+
+		<hr style="width: 80%;">
+			    
+		<br>
+
+		<div class="nav_links">
+			<div id="prompt_eng_btn" class="nav_link"><div class="nav_link_text">PROMPT ENG.</div></div>
+			<div id="rag_so_btn" class="nav_link"><div class="nav_link_text">RAG / SO</div></div>
+			<div id="multi_toolcall_btn" class="nav_link"><div class="nav_link_text">MUTLI / TOOLCALL</div></div>
+		</div>
+
+		<iframe id="pdf_iframe" src="./docs/1.pdf"></iframe>
 
 		<hr style="width: 80%;">
 			    
@@ -104,6 +116,27 @@
 
 		<script>
 
+			const prompt_eng_btn = document.getElementById("prompt_eng_btn");
+			const rag_so_btn = document.getElementById("rag_so_btn");
+			const multi_toolcall_btn = document.getElementById("multi_toolcall_btn");
+			const pdf_btns = [prompt_eng_btn, rag_so_btn, multi_toolcall_btn];
+
+			function setPDF(x) {
+				document.getElementById("pdf_iframe").src = `./docs/${x}.pdf`;
+			}
+
+			function setPDFColor(x) {
+
+				pdf_btns.forEach(btn => {
+
+					btn.style.color = "";
+					
+				});
+
+				pdf_btns[x].style.color = "yellow";
+
+			}
+
 			document.addEventListener("DOMContentLoaded", function() {
 
   				playText();
@@ -111,7 +144,25 @@
 				
 			});
 			
-			soonLightbox();
+			
+
+			prompt_eng_btn.addEventListener("click", () => {
+				setPDF(1);
+				setPDFColor(0);
+			});
+			
+			rag_so_btn.addEventListener("click", () => {
+				setPDF(2);
+				setPDFColor(1);
+			});
+
+			multi_toolcall_btn.addEventListener("click", () => {
+				setPDF(3);
+				setPDFColor(2);
+			});
+
+			setPDF(1);
+			setPDFColor(0);
 
 		</script>
 		    
