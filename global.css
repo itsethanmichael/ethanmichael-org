@@ -316,11 +316,16 @@ body {
     
 }
 
+#help_div {
+
+    margin: 2.5% 0 2.5% 0;
+}
+
 #pdf_reader {
 
     width: 75%;
     height: 100vh;
-    margin: 2.5% 0;
+    margin: 5% 0 0 0;
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 12px 2px #0ff, 0 2px 6px #000;
