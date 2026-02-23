@@ -39,6 +39,12 @@ body {
     
 }
 
+.default_text {
+
+    font-size: 2rem;
+
+}
+
 .nav_links {
     display: flex;
     flex-direction: row;
@@ -242,7 +248,7 @@ body {
     align-content: center;
     justify-content: space-between;
 
-    margin: 7.5% 0 10% 0;
+    margin: 7.5% 0 5% 0;
 
 }
 
@@ -583,6 +589,13 @@ pointer-events: none;
 
 .popsIn {
     opacity: 0;
+}
+
+.data_quote {
+
+    width: 33.333%;
+    font-size: 2.5rem;
+    
 }
 
 #social_imgs {
