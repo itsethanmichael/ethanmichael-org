@@ -269,7 +269,7 @@ function playText() {
 
   }
 
-  setTimeout(function() { playText() }, 3000);
+  setTimeout(function() { playText() }, 5000);
 
 }
 
