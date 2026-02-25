@@ -330,13 +330,38 @@ function borderlineMad(x) {
 
 }
 
+function imgZoom (x) {
+
+  //window.open(`${x.src}`);
+
+  if (x.style.width != "100%") {
+
+    x.style.width = "100%";
+    x.style.margin = "0";
+    x.style.alignContent = "center";
+    x.style.alignItems = "center";
+    x.style.alignSelf = "center";
+    x.style.justifyContent = "center";
+    x.style.justifyItems = "center";
+    x.style.justifySelf = "center";
+
+  }
+
+  else {
+
+    x.style.width = "80%";
+    x.style.margin = "2.5%";
+
+  }
+
+}
 
 /*const play_text_group = document.querySelectorAll(".play_text");
 play_text_group.forEach(element => {
   element.addEventListener("mouseenter", function() {oohColorful(element);});
 })*/
 
-const elementsToAnimate = document.querySelectorAll(".rosterItem, .popsIn");
+const elementsToAnimate = document.querySelectorAll(".popsIn");
 
 const observerOptions = {
   root: null,
