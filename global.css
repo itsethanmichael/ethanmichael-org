@@ -46,6 +46,23 @@ body {
     
 }
 
+.glows_mini {
+    box-shadow: 0 0 6px 1px #0ff, 0 1px 2px #000;
+    animation: glowPulse_mini 0.5s ease-in-out infinite;
+}
+.glows_small {
+    box-shadow: 0 0 12px 2px #0ff, 0 2px 4px #09f;
+    animation: glowPulse 1s ease-in-out infinite;
+}
+.glows {
+    box-shadow: 0 0 24px 2px #0ff, 0 2px 6px #000;
+    animation: glowPulse 2.5s ease-in-out infinite;
+}
+.glows_large {
+    box-shadow: 0 0 36px 4px #0ff, 0 4px 20px #09f;
+    animation: glowPulse 1s ease-in-out infinite;
+}
+
 .default_text {
 
     font-size: 2rem;
@@ -79,12 +96,12 @@ body {
     width: calc(100px + 1vw);
     height: calc(50px + 1vw);
     background: linear-gradient(90deg, #0ff 10%, #09f 90%);
+    box-shadow: 0 0 24px 2px #0ff, 0 2px 6px #000;
 
     border: none;
     border-radius: 0.5rem;
     font-size: 0rem;
     font-weight: 700;
-    box-shadow: 0 0 24px 2px #0ff, 0 2px 12px #000;
     cursor: pointer;
     margin: 1rem;
     transition: background 0.2s, box-shadow 0.2s, color 0.2s;
@@ -347,6 +364,12 @@ body {
     margin: 2.5% 0 2.5% 0;
 }
 
+#help_a:hover {
+    
+    opacity: 0.5;
+
+}
+
 #pdf_reader {
 
     width: 75%;
@@ -354,14 +377,13 @@ body {
     margin: 2.5% 0 5% 0;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 24px 2px #0ff, 0 2px 6px #000;
 
 }
 
 #file_system_div {
 
     display: none;
-    
+
 }
 
 #file_system {
@@ -376,7 +398,6 @@ body {
 
     border: 1px solid #ffffff55;
     border-radius: 5px;
-    box-shadow: 0 0 24px 2px #0ff, 0 2px 6px #000;
 
 }
 
@@ -567,7 +588,6 @@ body {
     border-radius: 1.5rem;
     font-size: 0.5rem;
     font-weight: 100;
-    box-shadow: 0 0 6px 1px #0ff, 0 1px 2px #000;
     cursor: pointer;
     transition: background 0.2s, box-shadow 0.2s, color 0.2s;
     align-content: center;
@@ -683,7 +703,6 @@ pointer-events: none;
     max-height: 500px;
 
     border-radius: 10px;
-    box-shadow: 0 0 24px 2px #0ff, 0 2px 6px #000;
 
     pointer-events: none;
     -webkit-user-select: none;
@@ -694,12 +713,13 @@ pointer-events: none;
 }
 
 .rosterThumbText {
-text-align: center;
-font-size: calc(12px + 1vh);
-width: 100%;
-margin-top: 0.5rem;
 
-pointer-events: none;
+    text-align: center;
+    font-size: calc(12px + 1vh);
+    width: 100%;
+    margin-top: 0.5rem;
+
+    pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1042,4 +1062,41 @@ pointer-events: none;
         transform: scale(1);
     }
 
+}
+
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 6px 2px #0ff, 0 2px 6px #000;
+  }
+  50% {
+    box-shadow: 0 0 24px 2px #0ff, 0 2px 6px #000;
+  }
+  100% {
+    box-shadow: 0 0 6px 2px #0ff, 0 2px 6px #000;
+  }
+}
+
+
+@keyframes glowPulse_mini {
+  0% {
+    box-shadow: 0 0 6px 2px #0ff, 0 2px 6px #000;
+  }
+  50% {
+    box-shadow: 0 0 12px 2px #0ff, 0 2px 6px #000;
+  }
+  100% {
+    box-shadow: 0 0 6px 2px #0ff, 0 2px 6px #000;
+  }
+}
+
+
+@keyframes neonFlicker {
+  0%   { box-shadow: 0 0 12px 2px #0ff; }
+  5%   { box-shadow: 0 0 20px 4px #0ff; }
+  8%   { box-shadow: 0 0 10px 1px #0ff; }
+  15%  { box-shadow: 0 0 16px 3px #0ff; }
+  22%  { box-shadow: 0 0 26px 6px #0ff; }
+  50%  { box-shadow: 0 0 36px 12px #0ff;}
+  100% { box-shadow: 0 0 12px 2px #0ff; }
 }
