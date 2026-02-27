@@ -67,7 +67,7 @@ function contactLightbox() {
     contactInfo.style.height = "80%";
     contactInfo.style.margin = "0 0 2.5% 0";
     contactInfo.style.color = "rgb(0, 255, 0)";
-    contactInfo.style.fontSize = "calc(4rem + 1vh)"
+    contactInfo.style.fontSize = "4rem"
     contactInfo.style.textAlign = "center";
     contactInfo.style.alignContent = "center";
     contactInfo.style.alignItems = "center";
@@ -79,7 +79,7 @@ function contactLightbox() {
     email.style.height = "auto";
     email.style.margin = "2.5vh 0 5vh 0";
     email.style.color = "cyan";
-    email.style.fontSize = "4rem";
+    email.style.fontSize = "3rem";
     email.style.textAlign = "center";
     email.innerHTML = "📧 EMAIL";
     email.id = "email";
@@ -96,7 +96,7 @@ function contactLightbox() {
     phone.style.height = "auto";
     phone.style.margin = "2.5vh 0 5vh 0";
     phone.style.color = "cyan";
-    phone.style.fontSize = "4rem";
+    phone.style.fontSize = "3rem";
     phone.style.textAlign = "center";
     phone.innerHTML = "📲 PHONE";
     phone.id = "phone";
@@ -660,6 +660,7 @@ const observerCallback = (entries, observer) => {
       entry.target.style.animationDuration = "0.5s";
       entry.target.style.animationTimingFunction = "ease-out";
       entry.target.style.animationFillMode = "forwards";
+      entry.target.style.animationIterationCount = "1";
       observer.unobserve(entry.target);
     }
 

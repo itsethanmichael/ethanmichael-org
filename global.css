@@ -48,19 +48,31 @@ body {
 
 .glows_mini {
     box-shadow: 0 0 6px 1px #0ff, 0 1px 2px #000;
-    animation: glowPulse_mini 0.5s ease-in-out infinite;
+    animation-name: glowPulse;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 .glows_small {
     box-shadow: 0 0 12px 2px #0ff, 0 2px 4px #09f;
-    animation: glowPulse 1s ease-in-out infinite;
+    animation-name: glowPulse;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 .glows {
     box-shadow: 0 0 24px 2px #0ff, 0 2px 6px #000;
-    animation: glowPulse 2.5s ease-in-out infinite;
+    animation-name: glowPulse;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 .glows_large {
     box-shadow: 0 0 36px 4px #0ff, 0 4px 20px #09f;
-    animation: glowPulse 1s ease-in-out infinite;
+    animation-name: glowPulse;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .default_text {
@@ -836,6 +848,13 @@ pointer-events: none;
 
 }
 
+.data_screenshot_div {
+
+    width: 80%;
+    border-radius: 20px;
+
+}
+
 .data_screenshot {
 
     width: 80%;
@@ -870,6 +889,7 @@ pointer-events: none;
     #logo_lite {
 
         height: 1rem;
+        margin: 0 0.5rem 0 0;
 
     }
     
@@ -1008,6 +1028,12 @@ pointer-events: none;
 
     #multi_toolcall_btn_text {
         font-size: 0.666rem;
+    }
+
+    .folder_file_description {
+
+        font-size: 80%;
+
     }
 
     #csv_dataset_description {
