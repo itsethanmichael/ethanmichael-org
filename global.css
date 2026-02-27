@@ -358,6 +358,12 @@ body {
 
 }
 
+#file_system_div {
+
+    display: none;
+    
+}
+
 #file_system {
 
     width: 50%;

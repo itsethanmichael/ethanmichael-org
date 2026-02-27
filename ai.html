@@ -78,16 +78,20 @@
 
 		<hr style="width: 80%;">
 
-		<div style="width: 80%;">
-            <p class="popsIn default_text data_quote">EXAMPLE</p>
-            <p class="popsIn default_text play_text">TRY IT YOURSELF</p>
-        </div>
+		<div id="file_system_div">
 
-        <div id="file_system"></div>
+			<div style="width: 80%;">
+				<p class="popsIn default_text data_quote">EXAMPLE</p>
+				<p class="popsIn default_text play_text">SEE IT YOURSELF</p>
+			</div>
 
-        <div style="width: 80%;">
-            <p class="popsIn default_text play_text">CLICK FILES TO DOWNLOAD</p>
-        </div>
+			<div id="file_system"></div>
+
+			<div style="width: 80%;">
+				<p class="popsIn default_text play_text">CLICK FILES TO DOWNLOAD</p>
+			</div>
+
+		</div>
 			    
 		<br>
 
@@ -170,22 +174,26 @@
 			prompt_eng_btn.addEventListener("click", () => {
 				setPDF(1);
 				setPDFColor(0);
+				setFlags(1);
+				fileSystemDriver(0, 0);
 			});
 			
 			rag_so_btn.addEventListener("click", () => {
 				setPDF(2);
 				setPDFColor(1);
+				setFlags(2);
+				fileSystemDriver(0, 2);
 			});
 
 			multi_toolcall_btn.addEventListener("click", () => {
 				setPDF(3);
 				setPDFColor(2);
+				setFlags(3);
+				fileSystemDriver(0, 3);
 			});
 
 			setPDF(1);
 			setPDFColor(0);
-
-			fileSystemDriver(0, 2);
 
 		</script>
 		    

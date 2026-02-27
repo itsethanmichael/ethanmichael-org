@@ -1,3 +1,9 @@
+PROMPT_FLAG = false;
+RAG_SO_FLAG = false;
+MULTI_TOOLCALL_FLAG = false;
+FOLDER_FLAG = false;
+DATA_FLAG = false;
+
 function lightDark() {
 
   const control_bar = document.getElementById("control_bar");
@@ -344,26 +350,96 @@ function imgZoom (x) {
 
 }
 
+function setFlags(x) {
+
+  switch (x) {
+
+    case 0:
+
+      DATA_FLAG = true;
+
+      break;
+
+
+    case 1:
+
+      RAG_SO_FLAG = false;
+			MULTI_TOOLCALL_FLAG = false;
+			PROMPT_FLAG = true;
+
+      break;
+
+    
+    case 2:
+
+      PROMPT_FLAG = false;
+			MULTI_TOOLCALL_FLAG = false;
+			RAG_SO_FLAG = true;
+
+      break;
+
+    
+    case 3:
+
+        PROMPT_FLAG = false;
+				RAG_SO_FLAG = false;
+				MULTI_TOOLCALL_FLAG = true;
+
+      break;
+
+  }
+
+}
+
 function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
 
   const file_system = document.getElementById("file_system");
+  
 
   switch (id) {
 
     case 0:
 
-      const folder_div = document.createElement("div");
-      const folder_icon = document.createElement("img");
+      if (FOLDER_FLAG) {
 
-      folder_div.addEventListener("click", () => { fileSystemDriver(1, fs_flag, folder_div, folder_icon); });
+        const existing = document.getElementById("file_system");
+        existing.innerHTML = "";
+        FOLDER_FLAG = false;
 
-      folder_div.className = "folder_div";
-      folder_icon.className = "folder_icon";
+      }
 
-      folder_icon.src = "./folder_closed.png";
+      if (((RAG_SO_FLAG || MULTI_TOOLCALL_FLAG) && !FOLDER_FLAG) || DATA_FLAG) {
+        
+        const folder_div = document.createElement("div");
+        const folder_icon = document.createElement("img");
 
-      file_system.appendChild(folder_div);
-      folder_div.appendChild(folder_icon);
+        document.getElementById("file_system_div").style.display = "inherit";
+
+        folder_div.className = "folder_div";
+        folder_icon.className = "folder_icon";
+
+        folder_icon.src = "./folder_closed.png";
+
+        file_system.appendChild(folder_div);
+        folder_div.appendChild(folder_icon);
+        
+        folder_div.addEventListener("click", () => { fileSystemDriver(1, fs_flag, folder_div, folder_icon); });
+
+        FOLDER_FLAG = true;
+        DATA_FLAG = false;
+    
+      }
+
+      else if ((!RAG_SO_FLAG  && !MULTI_TOOLCALL_FLAG) && FOLDER_FLAG && PROMPT_FLAG) {
+        document.getElementById("file_system_div").style.display = "none";
+      }
+
+      else {
+
+        document.getElementById("file_system_div").style.display = "inherit";
+
+      }
+
 
       break;
 
@@ -440,17 +516,17 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
             csv_sanitizer_div.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/data/dataset_sanitizer.zip");
+              window.open("./res/demo/dataset_sanitizer.zip");
             });
             csv_sanitizer_icon.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/data/dataset_sanitizer.zip");
+              window.open("./res/demo/dataset_sanitizer.zip");
             });
             csv_sanitizer_description.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/data/dataset_sanitizer.zip");
+              window.open("./res/demo/dataset_sanitizer.zip");
             });
             
             csv_sanitizer_div.appendChild(csv_sanitizer_icon);
@@ -463,7 +539,77 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
 
           case 2:
 
-            
+            const zip_div = document.createElement("div");
+            const zip_icon = document.createElement("img");
+            const zip_description = document.createElement("div");
+
+            zip_div.className = "folder_file_div";
+
+            zip_icon.className = "folder_file_icon";
+            zip_icon.src = "./zip.png";
+
+            zip_description.className = "folder_file_description";
+            zip_description.innerHTML = "rag_so_results.zip";
+
+            files_div.appendChild(zip_div);
+
+            zip_div.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/rag_so_results.zip");
+            });
+            zip_icon.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/rag_so_results.zip");
+            });
+            zip_description.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/rag_so_results.zip");
+            });
+
+            zip_div.appendChild(zip_icon);
+            zip_div.appendChild(zip_description);
+
+            break;
+          
+          
+
+          case 3:
+
+            const langchain_div = document.createElement("div");
+            const langchain_icon = document.createElement("img");
+            const langchain_description = document.createElement("div");
+
+            langchain_div.className = "folder_file_div";
+
+            langchain_icon.className = "folder_file_icon";
+            langchain_icon.src = "./py.png";
+
+            langchain_description.className = "folder_file_description";
+            langchain_description.innerHTML = "langChain_call.py";
+
+            files_div.appendChild(langchain_div);
+
+            langchain_div.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/langChain_call.zip");
+            });
+            langchain_icon.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/langChain_call.zip");
+            });
+            langchain_description.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/langChain_call.zip");
+            });
+
+            langchain_div.appendChild(langchain_icon);
+            langchain_div.appendChild(langchain_description);
 
             break;
 
@@ -477,7 +623,8 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
         fd.classList.remove("open");
         fi.style.opacity = "1.0";
 
-        document.getElementById("files_div").remove();
+        const oldFiles = fd.querySelector("#files_div");
+        if (oldFiles) oldFiles.remove();
 
       }
 
