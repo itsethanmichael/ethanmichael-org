@@ -68,18 +68,6 @@ function contactLightbox() {
     contactInfo.style.justifyItems = "center";
     contactInfo.id = "contactInfo";
 
-    /*dm.style.display = "flex";
-    dm.style.width = "100%";
-    dm.style.height = "auto";
-    dm.style.margin = "2.5vh 0 5vh 0";
-    dm.style.color = "cyan";
-    dm.style.textAlign = "center";
-    dm.innerHTML = "📥 DM <img src='IG.png' style='max-height:40px; min-height:1vh;'></img>";
-    dm.id = "dm";
-    dm.addEventListener("mouseover", () => { dm.style.display = "none"; dm.style.cursor = "pointer"; dm.style.color = "yellow"; });
-    dm.addEventListener("mouseout", () => { dm.style.color = "cyan"; })
-    dm.onclick = function () { goTo(1); };*/
-
     email.style.display = "flex";
     email.style.width = "100%";
     email.style.height = "auto";
@@ -356,10 +344,149 @@ function imgZoom (x) {
 
 }
 
-/*const play_text_group = document.querySelectorAll(".play_text");
-play_text_group.forEach(element => {
-  element.addEventListener("mouseenter", function() {oohColorful(element);});
-})*/
+function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
+
+  const file_system = document.getElementById("file_system");
+
+  switch (id) {
+
+    case 0:
+
+      const folder_div = document.createElement("div");
+      const folder_icon = document.createElement("img");
+
+      folder_div.addEventListener("click", () => { fileSystemDriver(1, fs_flag, folder_div, folder_icon); });
+
+      folder_div.className = "folder_div";
+      folder_icon.className = "folder_icon";
+
+      folder_icon.src = "./folder_closed.png";
+
+      file_system.appendChild(folder_div);
+      folder_div.appendChild(folder_icon);
+
+      break;
+
+    
+    case 1:
+
+      fi.dataset.open = fi.dataset.open === "true" ? "false" : "true";
+      fi.src = fi.dataset.open === "true" ? "./folder_open.png" : "./folder_closed.png";
+
+      if (fi.dataset.open === "true") {
+
+        fd.classList.add("open");
+        fi.style.opacity = "0.5";
+
+        const files_div = document.createElement("div");
+        files_div.id = "files_div";
+
+        fd.appendChild(files_div);
+
+
+        switch(fs_flag) {
+
+          case (1):
+
+            const csv_dataset_div = document.createElement("div");
+            const csv_dataset_icon = document.createElement("img");
+            const csv_dataset_description = document.createElement("div");
+
+            const csv_sanitizer_div = document.createElement("div");
+            const csv_sanitizer_icon = document.createElement("img");
+            const csv_sanitizer_description = document.createElement("div");
+            
+
+            csv_dataset_div.className = "folder_file_div";
+
+            csv_dataset_icon.className = "folder_file_icon";
+            csv_dataset_icon.src = "./csv.png";
+
+            csv_dataset_description.className = "folder_file_description";
+            csv_dataset_description.innerHTML = "Final_Augmented_dataset_Diseases_and_Symptoms.csv";
+
+
+            csv_sanitizer_div.className = "folder_file_div";
+
+            csv_sanitizer_icon.className = "folder_file_icon";
+            csv_sanitizer_icon.src = "./py.png";
+
+            csv_sanitizer_description.className = "folder_file_description";
+            csv_sanitizer_description.innerHTML = "large_dataset_sanitizer.py";
+
+
+            files_div.appendChild(csv_dataset_div);
+            files_div.appendChild(csv_sanitizer_div);
+
+            csv_dataset_div.appendChild(csv_dataset_icon);
+            csv_dataset_div.appendChild(csv_dataset_description);
+
+            csv_dataset_div.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./docs/data/Final_Augmented_dataset_Diseases_and_Symptoms.zip");
+            });
+            csv_dataset_icon.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./docs/data/Final_Augmented_dataset_Diseases_and_Symptoms.zip");
+            });
+            csv_dataset_description.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./docs/data/Final_Augmented_dataset_Diseases_and_Symptoms.zip");
+            });
+
+            csv_sanitizer_div.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/data/large_dataset_sanitizer.zip");
+            });
+            csv_sanitizer_icon.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/data/large_dataset_sanitizer.zip");
+            });
+            csv_sanitizer_description.addEventListener("click", (e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("./res/demo/data/large_dataset_sanitizer.zip");
+            });
+            
+            csv_sanitizer_div.appendChild(csv_sanitizer_icon);
+            csv_sanitizer_div.appendChild(csv_sanitizer_description);
+
+
+            break;
+          
+          
+
+          case 2:
+
+            
+
+            break;
+
+        }
+
+
+      }
+
+      else {
+
+        fd.classList.remove("open");
+        fi.style.opacity = "1.0";
+
+        document.getElementById("files_div").remove();
+
+      }
+
+      break;
+      
+
+  }
+
+}
 
 const elementsToAnimate = document.querySelectorAll(".popsIn");
 

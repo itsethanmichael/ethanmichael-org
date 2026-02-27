@@ -358,6 +358,136 @@ body {
 
 }
 
+#file_system {
+
+    width: 50%;
+    height: fit-content;
+
+    padding: 0.5%;
+
+    align-content: center;
+    justify-self: center;
+
+    border: 1px solid #ffffff55;
+    border-radius: 5px;
+    box-shadow: 0 0 24px 2px #0ff, 0 2px 6px #000;
+
+}
+
+.folder_div {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    padding: 1%;
+
+    justify-items: start;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+
+    border: 2px solid yellow;
+    border-radius: 5px;
+
+}
+
+.folder_div.open {
+
+    background: rgba(255, 255, 255, 0.25);
+    height: 90%;
+
+}
+
+.folder_div:hover {
+
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+
+}
+
+.folder_div:active {
+
+    background: rgba(255, 255, 255, 0.125);
+
+}
+
+.folder_div.open:hover {
+
+    background: rgba(255, 255, 255, 0.35);
+
+}
+.folder_div:not(.open):hover {
+
+    background: rgba(255, 255, 255, 0.25);
+    
+}
+
+
+#files_div {
+
+    width: 100%;
+    height: fit-content;
+    
+}
+
+
+.folder_icon {
+
+    height: 2rem;
+
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+
+}
+
+.folder_file_div {
+
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 2rem;
+
+    align-items: start;
+    align-content: start;
+
+}
+.folder_file_div:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.folder_file_icon {
+
+    display: flex;
+    height: 100%;
+    margin: 0 0 0 3rem;
+
+}
+.folder_file_icon:hover {
+    cursor: pointer;
+}
+
+.folder_file_description {
+
+    width: 50%;
+    font-size: 75%;
+
+    margin: 0 0 0 1rem;
+
+    align-self: center;
+
+    text-align: start;
+
+}
+.folder_file_description:hover {
+    cursor: pointer;
+}
+
 #tagline {
 
     width: 100%;
@@ -636,7 +766,7 @@ pointer-events: none;
 
 }
 
-#you_need {
+.data_blockquote_text {
 
     margin: 5% 0 5% 0;
     font-size: 3rem;
@@ -700,6 +830,7 @@ pointer-events: none;
 
 }
 
+
 @media (max-aspect-ratio: 1/1) {
 
     #lightbox {
@@ -750,6 +881,12 @@ pointer-events: none;
 
         width: 90%;
         margin: 5% 0 7.5% 0;
+    
+    }
+
+    #file_system {
+
+        width: 66.666%;
     
     }
 
@@ -822,10 +959,9 @@ pointer-events: none;
 
     }
 
-    #you_need {
+    .data_blockquote_text {
 
         margin: 10% 0 10% 0;
-        font-size: 2.5rem;
     
     }
 
@@ -846,6 +982,12 @@ pointer-events: none;
 
     #multi_toolcall_btn_text {
         font-size: 0.666rem;
+    }
+
+    #csv_dataset_description {
+
+        font-size: 50%;
+
     }
     
 }
