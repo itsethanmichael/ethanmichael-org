@@ -400,10 +400,18 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
 
     case 0:
 
+      if (PROMPT_FLAG) {
+        document.getElementById("file_system_div").style.display = "none";
+        document.getElementById("file_system").innerHTML = "";
+        FOLDER_FLAG = false;
+        DATA_FLAG = false;
+        return;
+      }
+
       if (FOLDER_FLAG) {
 
-        const existing = document.getElementById("file_system");
-        existing.innerHTML = "";
+        document.getElementById("file_system").innerHTML = "";
+        document.getElementById("file_system_div").style.display = "none";
         FOLDER_FLAG = false;
 
       }
