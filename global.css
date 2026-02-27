@@ -378,14 +378,17 @@ body {
 
     display: flex;
     flex-direction: column;
+    width: 97.5%;
     height: 100%;
 
     padding: 1%;
 
     justify-items: start;
     justify-content: start;
+    justify-self: center;
     align-items: start;
     align-content: start;
+    align-self: flex-start;
 
     border: 2px solid yellow;
     border-radius: 5px;
@@ -434,7 +437,7 @@ body {
 
 .folder_icon {
 
-    height: 2rem;
+    height: 3rem;
 
     pointer-events: none;
     -webkit-user-select: none;
@@ -450,7 +453,7 @@ body {
     flex-direction: row;
     
     width: 100%;
-    height: 2rem;
+    height: 3rem;
 
     align-items: start;
     align-content: start;

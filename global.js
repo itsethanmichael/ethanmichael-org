@@ -403,7 +403,7 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
             csv_dataset_icon.src = "./csv.png";
 
             csv_dataset_description.className = "folder_file_description";
-            csv_dataset_description.innerHTML = "Final_Augmented_dataset_Diseases_and_Symptoms.csv";
+            csv_dataset_description.innerHTML = "example_dataset.csv";
 
 
             csv_sanitizer_div.className = "folder_file_div";
@@ -412,7 +412,7 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
             csv_sanitizer_icon.src = "./py.png";
 
             csv_sanitizer_description.className = "folder_file_description";
-            csv_sanitizer_description.innerHTML = "large_dataset_sanitizer.py";
+            csv_sanitizer_description.innerHTML = "dataset_sanitizer.py";
 
 
             files_div.appendChild(csv_dataset_div);
