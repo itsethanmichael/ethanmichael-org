@@ -465,11 +465,9 @@ body {
 }
 
 .folder_file_icon {
-
-    display: flex;
     height: 100%;
-    margin: 0 0 0 3rem;
-
+    margin-left: 3rem;
+    align-self: flex-start;
 }
 .folder_file_icon:hover {
     cursor: pointer;
