@@ -424,33 +424,33 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
             csv_dataset_div.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./docs/data/Final_Augmented_dataset_Diseases_and_Symptoms.zip");
+              window.open("./docs/data/example_dataset.zip");
             });
             csv_dataset_icon.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./docs/data/Final_Augmented_dataset_Diseases_and_Symptoms.zip");
+              window.open("./docs/data/example_dataset.zip");
             });
             csv_dataset_description.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./docs/data/Final_Augmented_dataset_Diseases_and_Symptoms.zip");
+              window.open("./docs/data/example_dataset.zip");
             });
 
             csv_sanitizer_div.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/data/large_dataset_sanitizer.zip");
+              window.open("./res/demo/data/dataset_sanitizer.zip");
             });
             csv_sanitizer_icon.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/data/large_dataset_sanitizer.zip");
+              window.open("./res/demo/data/dataset_sanitizer.zip");
             });
             csv_sanitizer_description.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/data/large_dataset_sanitizer.zip");
+              window.open("./res/demo/data/dataset_sanitizer.zip");
             });
             
             csv_sanitizer_div.appendChild(csv_sanitizer_icon);
