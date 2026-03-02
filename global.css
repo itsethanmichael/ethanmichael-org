@@ -548,6 +548,22 @@ body {
 
     width: 100%;
 
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+
+}
+
+#coach_img {
+
+    width: 50%;
+
+    margin: 10% 0 10% 0;
+
+    border-radius: 20px;
+
 }
 
 #footer {
@@ -647,7 +663,7 @@ justify-content: center;
 
 width: 100%;
 max-width: 100%;
-margin: 10% 0 10% 0;
+margin: 0 0 10% 0;
 padding: 0;
 
 pointer-events: none;
@@ -973,6 +989,14 @@ pointer-events: none;
     #tagline_text {
 
         font-size: 2.5rem;
+
+    }
+
+    #coach_img {
+
+        width: 80%;
+
+        margin: 10% 0 10% 0;
 
     }
     
