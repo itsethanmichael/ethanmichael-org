@@ -566,6 +566,12 @@ body {
 
 }
 
+.sales_quote_text {
+
+    font-size: 3rem;
+
+}
+
 #footer {
 
     display: flex;
@@ -997,6 +1003,12 @@ pointer-events: none;
         width: 80%;
 
         margin: 10% 0 10% 0;
+
+    }
+
+    .sales_quote_text {
+
+        font-size: 2rem;
 
     }
     
