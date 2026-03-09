@@ -253,11 +253,12 @@ body {
 
     display: flex;
     width: 25%;
-    height: fit-content;
+    height: 25%;
     margin: 2.5% 0 5% 0;
     color: #0FF;
-    font-size: 100%;
+    font-size: 75%;
     text-align: center;
+    padding: 5%;
 
 }
 
@@ -265,11 +266,12 @@ body {
 
     display: flex;
     width: 25%;
-    height: fit-content;
+    height: 25%;
     margin: 2.5% 0 5% 0;
     color: #0FF;
-    font-size: 100%;
+    font-size: 75%;
     text-align: center;
+    padding: 5%;
 
 }
 
@@ -940,18 +942,6 @@ pointer-events: none;
         left: 7.5%;
 
     }*/
-
-    #phone {
-
-        font-size: 4rem;
-
-    }
-
-    #email {
-
-        font-size: 4rem;
-
-    }
 
     #logo_lite {
 
