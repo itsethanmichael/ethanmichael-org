@@ -79,7 +79,7 @@ function contactLightbox() {
     email.style.height = "auto";
     email.style.margin = "2.5vh 0 5vh 0";
     email.style.color = "cyan";
-    email.style.fontSize = "3rem";
+    email.style.fontSize = "4rem";
     email.style.textAlign = "center";
     email.innerHTML = "📧 EMAIL";
     email.id = "email";
@@ -96,7 +96,7 @@ function contactLightbox() {
     phone.style.height = "auto";
     phone.style.margin = "2.5vh 0 5vh 0";
     phone.style.color = "cyan";
-    phone.style.fontSize = "3rem";
+    phone.style.fontSize = "4rem";
     phone.style.textAlign = "center";
     phone.innerHTML = "📲 PHONE";
     phone.id = "phone";
