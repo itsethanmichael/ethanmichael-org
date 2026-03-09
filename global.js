@@ -506,33 +506,33 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
             csv_dataset_div.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./docs/data/example_dataset.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/docs/data/example_dataset.zip");
             });
             csv_dataset_icon.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./docs/data/example_dataset.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/docs/data/example_dataset.zip");
             });
             csv_dataset_description.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./docs/data/example_dataset.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/docs/data/example_dataset.zip");
             });
 
             csv_sanitizer_div.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/dataset_sanitizer.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/dataset_sanitizer.zip");
             });
             csv_sanitizer_icon.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/dataset_sanitizer.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/dataset_sanitizer.zip");
             });
             csv_sanitizer_description.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/dataset_sanitizer.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/dataset_sanitizer.zip");
             });
             
             csv_sanitizer_div.appendChild(csv_sanitizer_icon);
