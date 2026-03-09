@@ -562,17 +562,17 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
             zip_div.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/rag_so_results.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/rag_so_results.zip");
             });
             zip_icon.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/rag_so_results.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/rag_so_results.zip");
             });
             zip_description.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/rag_so_results.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/rag_so_results.zip");
             });
 
             zip_div.appendChild(zip_icon);
@@ -601,17 +601,17 @@ function fileSystemDriver(id, fs_flag, fd=null, fi=null) {
             langchain_div.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/langChain_call.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/langChain_call.zip");
             });
             langchain_icon.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/langChain_call.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/langChain_call.zip");
             });
             langchain_description.addEventListener("click", (e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open("./res/demo/langChain_call.zip");
+              window.open("https://media.githubusercontent.com/media/itsethanmichael/ethanmichael-org/main/res/demo/langChain_call.zip");
             });
 
             langchain_div.appendChild(langchain_icon);
