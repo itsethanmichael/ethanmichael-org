@@ -892,6 +892,7 @@ pointer-events: none;
 .social_img:hover {
 
     cursor: pointer;
+    opacity: 0.5;
 
 }
 
