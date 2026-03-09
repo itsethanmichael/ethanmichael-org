@@ -244,6 +244,8 @@ body {
 }
 
 #contactInfo {
+    display: flex;
+    flex-direction: row;
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -1048,6 +1050,7 @@ pointer-events: none;
     }
     
     #contactInfo {
+        flex-direction: column;
         font-size: calc(3rem + 1vh);
         justify-items: center;
         align-items: center;
