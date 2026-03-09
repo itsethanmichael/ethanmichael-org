@@ -252,9 +252,9 @@ body {
 #phone {
 
     display: flex;
-    width: 50%;
-    height: auto;
-    margin: 2.5vh 0 5vh 0;
+    width: 75%;
+    height: 50%;
+    margin: 2.5% 0 5% 0;
     color: #0FF;
     font-size: 5rem;
     text-align: center;
@@ -264,9 +264,9 @@ body {
 #email {
 
     display: flex;
-    width: 50%;
-    height: auto;
-    margin: 2.5vh 0 5vh 0;
+    width: 75%;
+    height: 50%;
+    margin: 2.5% 0 5% 0;
     color: #0FF;
     font-size: 5rem;
     text-align: center;
@@ -887,7 +887,7 @@ pointer-events: none;
 .social_img_div {
 
     margin: 10%;
-    
+
 }
 
 .social_img {
