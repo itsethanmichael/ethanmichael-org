@@ -248,6 +248,30 @@ body {
     align-content: center;
 }
 
+#phone {
+
+    display: "flex";
+    width: "100%";
+    height: "auto";
+    margin: "2.5vh 0 5vh 0";
+    color: "cyan";
+    font-size: "4rem";
+    text-align: "center";
+
+}
+
+#email {
+
+    display: "flex";
+    width: "100%";
+    height: "auto";
+    margin: "2.5vh 0 5vh 0";
+    color: "cyan";
+    font-size: "4rem";
+    text-align: "center";
+
+}
+
 .contact_button {
 
     justify-items: center;
@@ -905,6 +929,18 @@ pointer-events: none;
         width: 85%;
         top: 25%;
         left: 7.5%;
+
+    }
+
+    #phone {
+
+        font-size: "3rem";
+
+    }
+
+    #email {
+
+        font-size: "3rem";
 
     }
 

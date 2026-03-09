@@ -74,13 +74,13 @@ function contactLightbox() {
     contactInfo.style.justifyItems = "center";
     contactInfo.id = "contactInfo";
 
-    email.style.display = "flex";
+    /*email.style.display = "flex";
     email.style.width = "100%";
     email.style.height = "auto";
     email.style.margin = "2.5vh 0 5vh 0";
     email.style.color = "cyan";
     email.style.fontSize = "3rem";
-    email.style.textAlign = "center";
+    email.style.textAlign = "center";*/
     email.innerHTML = "📧 EMAIL";
     email.id = "email";
     email.addEventListener("mouseover", () => { email.style.cursor = "pointer"; email.style.color = "yellow"; });
@@ -91,13 +91,13 @@ function contactLightbox() {
       window.location.href = "mailto:business@ethanmichael.org";
     };
 
-    phone.style.display = "flex";
+    /*phone.style.display = "flex";
     phone.style.width = "100%";
     phone.style.height = "auto";
     phone.style.margin = "2.5vh 0 5vh 0";
     phone.style.color = "cyan";
     phone.style.fontSize = "3rem";
-    phone.style.textAlign = "center";
+    phone.style.textAlign = "center";*/
     phone.innerHTML = "📲 PHONE";
     phone.id = "phone";
     phone.addEventListener("mouseover", () => { phone.style.cursor = "pointer"; phone.style.color = "yellow"; });
