@@ -256,7 +256,7 @@ body {
     height: auto;
     margin: 2.5vh 0 5vh 0;
     color: #0FF;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
 
 }
@@ -268,7 +268,7 @@ body {
     height: auto;
     margin: 2.5vh 0 5vh 0;
     color: #0FF;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
 
 }
@@ -935,13 +935,13 @@ pointer-events: none;
 
     #phone {
 
-        font-size: 3rem;
+        font-size: 4rem;
 
     }
 
     #email {
 
-        font-size: 3rem;
+        font-size: 4rem;
 
     }
 

@@ -81,7 +81,7 @@ function contactLightbox() {
     email.style.color = "cyan";
     email.style.fontSize = "4rem";
     email.style.textAlign = "center";*/
-    email.innerHTML = "📧 EMAIL";
+    email.innerHTML = "📧";
     email.addEventListener("mouseover", () => { email.style.cursor = "pointer"; email.style.color = "yellow"; });
     email.addEventListener("mouseout", () => { email.style.color = "cyan"; })
     email.onclick = function () {
@@ -97,7 +97,7 @@ function contactLightbox() {
     phone.style.color = "cyan";
     phone.style.fontSize = "4rem";
     phone.style.textAlign = "center";*/
-    phone.innerHTML = "📲 PHONE";
+    phone.innerHTML = "📲";
     phone.addEventListener("mouseover", () => { phone.style.cursor = "pointer"; phone.style.color = "yellow"; });
     phone.addEventListener("mouseout", () => { phone.style.color = "cyan"; })
     phone.onclick = function () {
