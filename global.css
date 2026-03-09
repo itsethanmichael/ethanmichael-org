@@ -924,13 +924,13 @@ pointer-events: none;
 
 @media (max-aspect-ratio: 1/1) {
 
-    #lightbox {
+    /*#lightbox {
 
         width: 85%;
         top: 25%;
         left: 7.5%;
 
-    }
+    }*/
 
     #phone {
 
