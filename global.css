@@ -884,10 +884,15 @@ pointer-events: none;
 
 }
 
+.social_img_div {
+
+    margin: 10%;
+    
+}
+
 .social_img {
 
     height: calc(50px + 0.5vw);
-    margin: 10%;
     
 }
 
