@@ -124,7 +124,7 @@ function soonLightbox() {
     lightboxX.style.fontSize = "calc(100% + 4pt)";
 
     contactInfo.style.width = "100%";
-    contactInfo.style.height = "80%";
+    //contactInfo.style.height = "80%";
     contactInfo.style.margin = "0 0 2.5% 0";
     contactInfo.style.color = "rgb(0, 255, 0)";
     contactInfo.style.fontSize = "calc(4rem + 1vh)"
@@ -139,7 +139,7 @@ function soonLightbox() {
 
     soon.style.display = "flex";
     soon.style.width = "fit-content";
-    soon.style.height = "fit-content";
+    soon.style.height = "auto";
     soon.style.margin = "2.5vh 0 5vh 0";
     soon.style.color = "red";
     soon.style.fontSize = "90%";
