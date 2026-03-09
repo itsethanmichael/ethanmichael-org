@@ -119,7 +119,7 @@ function soonLightbox() {
     const phone = document.getElementById("phone");
 
     lightbox.style.display = "block";
-    lightbox.style.height = "50%";
+    //lightbox.style.height = "50%";
     lightboxX.innerHTML = "X";
     lightboxX.style.fontSize = "calc(100% + 4pt)";
 
