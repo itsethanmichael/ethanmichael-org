@@ -252,7 +252,7 @@ body {
 #phone {
 
     display: flex;
-    width: 100%;
+    width: 50%;
     height: auto;
     margin: 2.5vh 0 5vh 0;
     color: #0FF;
@@ -264,7 +264,7 @@ body {
 #email {
 
     display: flex;
-    width: 100%;
+    width: 50%;
     height: auto;
     margin: 2.5vh 0 5vh 0;
     color: #0FF;
