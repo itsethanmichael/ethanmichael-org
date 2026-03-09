@@ -139,7 +139,7 @@ function soonLightbox() {
 
     soon.style.display = "flex";
     soon.style.width = "fit-content";
-    soon.style.height = "auto";
+    soon.style.height = "fit-content";
     soon.style.margin = "2.5vh 0 5vh 0";
     soon.style.color = "red";
     soon.style.fontSize = "90%";
