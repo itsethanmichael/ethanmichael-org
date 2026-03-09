@@ -65,7 +65,7 @@ function contactLightbox() {
 
     contactInfo.style.width = "100%";
     //contactInfo.style.height = "80%";
-    contactInfo.style.margin = "0 0 2.5% 0";
+    contactInfo.style.margin = "0 0 5% 0";
     contactInfo.style.color = "rgb(0, 255, 0)";
     contactInfo.style.fontSize = "4rem"
     contactInfo.style.textAlign = "center";
