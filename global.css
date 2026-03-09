@@ -255,11 +255,11 @@ body {
 #phone {
 
     display: flex;
-    width: 5rem;
+    width: 7.5rem;
     height: fit-content;
     margin: 0 2.5% 0 5%;
     color: #0FF;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     padding: 1%;
 
@@ -268,11 +268,11 @@ body {
 #email {
 
     display: flex;
-    width: 5rem;
+    width: 7.5rem;
     height: fit-content;
     margin: 0 2.5% 0 5%;
     color: #0FF;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     padding: 1%;
 
