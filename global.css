@@ -245,6 +245,7 @@ body {
 
 #contactInfo {
     display: flex;
+    height: fit-content;
     flex-direction: row;
     justify-items: center;
     justify-content: center;
