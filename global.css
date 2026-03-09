@@ -403,7 +403,7 @@ body {
 
 #help_a:hover {
     
-    opacity: 0.75;
+    opacity: 0.666;
 
 }
 
@@ -634,7 +634,7 @@ body {
     color: yellow;
     box-shadow: 0 0 36px 4px #0ff, 0 4px 20px #09f;
     letter-spacing: 1px;
-    opacity: 0.75;
+    opacity: 0.666;
     cursor: pointer;
 }
 
@@ -660,7 +660,7 @@ body {
     color: yellow;
     box-shadow: 0 0 12px 2px #0ff, 0 2px 4px #09f;
     letter-spacing: 1px;
-    opacity: 0.75;
+    opacity: 0.666;
     cursor: pointer;
 }
 
@@ -894,7 +894,7 @@ pointer-events: none;
 .social_img:hover {
 
     cursor: pointer;
-    opacity: 0.75;
+    opacity: 0.666;
 
 }
 
