@@ -255,26 +255,26 @@ body {
 #phone {
 
     display: flex;
-    width: 25%;
-    height: 25%;
+    width: 5rem;
+    height: fit-content;
     margin: 0 2.5% 0 5%;
     color: #0FF;
-    font-size: 100%;
+    font-size: 3rem;
     text-align: center;
-    padding: 2.5%;
+    padding: 1%;
 
 }
 
 #email {
 
     display: flex;
-    width: 25%;
-    height: 25%;
+    width: 5rem;
+    height: fit-content;
     margin: 0 2.5% 0 5%;
     color: #0FF;
-    font-size: 100%;
+    font-size: 3rem;
     text-align: center;
-    padding: 2.5%;
+    padding: 1%;
 
 }
 
