@@ -251,25 +251,25 @@ body {
 
 #phone {
 
-    display: "flex";
-    width: "100%";
-    height: "auto";
-    margin: "2.5vh 0 5vh 0";
-    color: "cyan";
-    font-size: "4rem";
-    text-align: "center";
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 2.5vh 0 5vh 0;
+    color: #0FF;
+    font-size: 4rem;
+    text-align: center;
 
 }
 
 #email {
 
-    display: "flex";
-    width: "100%";
-    height: "auto";
-    margin: "2.5vh 0 5vh 0";
-    color: "cyan";
-    font-size: "4rem";
-    text-align: "center";
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 2.5vh 0 5vh 0;
+    color: #0FF;
+    font-size: 4rem;
+    text-align: center;
 
 }
 
