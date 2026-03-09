@@ -64,7 +64,7 @@ function contactLightbox() {
     lightboxX.style.fontSize = "calc(100% + 4pt)";
 
     contactInfo.style.width = "100%";
-    contactInfo.style.height = "80%";
+    //contactInfo.style.height = "80%";
     contactInfo.style.margin = "0 0 2.5% 0";
     contactInfo.style.color = "rgb(0, 255, 0)";
     contactInfo.style.fontSize = "4rem"
