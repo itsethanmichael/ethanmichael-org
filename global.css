@@ -577,7 +577,9 @@ body {
 
 #tagline_text {
 
-    width: 100%;
+    width: 90%;
+    
+    justify-self: center;
 
     pointer-events: none;
     -webkit-user-select: none;

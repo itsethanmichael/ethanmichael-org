@@ -297,6 +297,7 @@ function textChange() {
 
     }
 
+    oohColorful(tagline);
     setTimeout(function() { textChange() }, 3000);
 
 }
