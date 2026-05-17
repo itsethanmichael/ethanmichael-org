@@ -647,7 +647,7 @@ const elementsToAnimate = document.querySelectorAll(".popsIn");
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.20
+  threshold: 0.15
 };
 
 const observerCallback = (entries, observer) => {
