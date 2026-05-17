@@ -191,7 +191,7 @@ function goTo(x) {
       
       case 5:
 
-        window.location.href = "https://ethanmichael.org/hsk.html";
+        window.open("https://quicksearchchinese.com/");
         break;
       
       case 6:
@@ -647,7 +647,7 @@ const elementsToAnimate = document.querySelectorAll(".popsIn");
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.25
+  threshold: 0.20
 };
 
 const observerCallback = (entries, observer) => {
