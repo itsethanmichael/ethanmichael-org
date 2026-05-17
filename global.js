@@ -191,7 +191,7 @@ function goTo(x) {
       
       case 5:
 
-        window.location.href = "https://ethanmichael.org/hsk.html";
+        window.location.href = "https://quicksearchchinese.com/";
         break;
       
       case 6:
