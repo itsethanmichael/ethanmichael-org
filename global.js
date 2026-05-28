@@ -341,15 +341,24 @@ function imgZoom (x) {
   }
 
   else {
+    
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const aspectRatio = width / height;
 
-    if (x.id == "coach_img") {
+    if (x.id == "coach_img" && aspectRatio > 1) {
+
       x.style.width = "50%";
-    }
-    else {
-      x.style.width = "80%";
+      x.style.margin = "10% 0 10% 0";
+
     }
 
-    x.style.margin = "2.5%";
+    else {
+
+      x.style.width = "80%";
+      x.style.margin = "10% 0 10% 0";
+
+    }
 
   }
 
