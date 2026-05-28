@@ -144,6 +144,10 @@ body {
     font-size: 1rem;
 }
 
+#wdkshsk_img {
+    border-radius: 5px;
+}
+
 #homeDiv {
 
     display: flex;
