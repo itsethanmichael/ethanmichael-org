@@ -342,7 +342,13 @@ function imgZoom (x) {
 
   else {
 
-    x.style.width = "80%";
+    if (x.id == "coach_img") {
+      x.style.width = "50%";
+    }
+    else {
+      x.style.width = "80%";
+    }
+
     x.style.margin = "2.5%";
 
   }
