@@ -10,9 +10,9 @@ function lightDark() {
   const light_dark = document.getElementById("light_dark");
   const roster_thumbs = document.querySelectorAll(".rosterThumb");
 
-  switch (light_dark.innerHTML) {
+  switch (sessionStorage.getItem("dark_mode")) {
 
-    case ("🌙"):
+    case ("0"):
 
       document.body.style.color = "black";
       document.body.style.backgroundColor = "white";
@@ -23,9 +23,11 @@ function lightDark() {
       light_dark.innerHTML = "☀️";
       light_dark.style.background = "rgba(0, 0, 0, 0.085)";
 
+      sessionStorage.setItem("dark_mode", "1");
+
       break;
 
-    case ("☀️"):
+    case ("1"):
 
       document.body.style.color = "white";
       document.body.style.backgroundColor = "black";
@@ -39,6 +41,8 @@ function lightDark() {
 
       light_dark.innerHTML = "🌙";
       light_dark.style.background = "rgba(255, 255, 255, 0.085)";
+
+      sessionStorage.setItem("dark_mode", "0");
 
       break;
 
@@ -702,3 +706,12 @@ document.getElementById("better_my_english").addEventListener("click", () => {
 });
 
 //document.getElementById("").addEventListener("click", goTo());
+
+if (!sessionStorage.getItem("start_flag")) {
+  sessionStorage.setItem("dark_mode", "1");
+  sessionStorage.setItem("start_flag", "1");
+  lightDark();
+}
+else {
+  lightDark();
+}
