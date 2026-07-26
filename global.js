@@ -175,7 +175,7 @@ function goTo(x) {
 
     case 1:
 
-      window.open("https://ig.me/m/ethanmichaelorg/");
+      window.open("https://ig.me/m/officialethanmichael/");
       break;
 
     case 2:
