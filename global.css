@@ -706,7 +706,8 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
-width: 100%;
+min-width: 33.333%;
+width: fit-content;
 max-width: 100%;
 margin: 0 0 10% 0;
 padding: 0;
@@ -770,7 +771,7 @@ pointer-events: none;
     margin: 0 auto;
 
     min-width: 100px;
-    width: 40vw;
+    width: 25vw;
     max-width: 500px;
     max-height: 500px;
 
@@ -980,26 +981,20 @@ pointer-events: none;
     }
 
     .rosterThumb {
-        width: 50vw;
+        min-width: 33.333vw;
     }
 
     #help_div {
-
         margin: 2.5% 0 2.5% 0;
-
     }
 
     #pdf_reader {
-
         width: 90%;
         margin: 5% 0 7.5% 0;
-    
     }
 
     #file_system {
-
         width: 80%;
-    
     }
 
     .contact {
