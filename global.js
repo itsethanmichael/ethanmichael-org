@@ -436,7 +436,7 @@ light_dark.addEventListener("click", lightDark);
 lightDark();
 
 document.getElementById("better_my_english").addEventListener("click", () => {
-  window.open("https://bettermyenglish.com/");
+  window.open("https://bettermyenglish.org/");
 });
 
 if (!sessionStorage.getItem("start_flag")) {
