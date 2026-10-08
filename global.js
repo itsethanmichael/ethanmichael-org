@@ -435,10 +435,6 @@ light_dark.innerHTML = "☀️";
 light_dark.addEventListener("click", lightDark);
 lightDark();
 
-document.getElementById("better_my_english").addEventListener("click", () => {
-  window.open("https://bettermyenglish.org/");
-});
-
 if (!sessionStorage.getItem("start_flag")) {
   sessionStorage.setItem("dark_mode", "1");
   sessionStorage.setItem("start_flag", "1");
