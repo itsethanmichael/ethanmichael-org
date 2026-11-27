@@ -415,8 +415,23 @@ light_dark.innerHTML = "☀️";
 light_dark.addEventListener("click", lightDark);
 lightDark();
 
+document.getElementById("logo").addEventListener("click", () => {
+    goTo(0);
+});
+document.getElementById("EthanMichael").addEventListener("click", () => {
+    goTo(0);
+});
+document.getElementById("EthanMichael2").addEventListener("click", () => {
+    goTo(0);
+});
+document.getElementById("wdkshsk").addEventListener("click", () => {
+    goTo(5);
+});
 document.getElementById("better_my_english").addEventListener("click", () => {
   window.open("https://bettermyenglish.org/");
+});
+document.getElementById("betr_english").addEventListener("click", () => {
+    window.open("https://betrenglish.org/");
 });
 
 if (!sessionStorage.getItem("start_flag")) {
